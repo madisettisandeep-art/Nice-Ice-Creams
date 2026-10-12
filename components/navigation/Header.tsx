@@ -401,7 +401,7 @@ export function Header() {
 
         {/* Instant Global Flavour Search Bar Overlay */}
         {searchOpen && (
-          <div className="bg-ivory-50/95 backdrop-blur-md text-cinema-900 border-t border-ivory-300 shadow-xl px-4 py-4 animate-fadeIn">
+          <div className="bg-ivory-50/95 backdrop-blur-md text-cinema-900 border-t border-ivory-300 shadow-xl px-4 py-4 animate-fadeIn max-h-[75vh] overflow-y-auto custom-scrollbar overscroll-contain">
             <div className="max-w-3xl mx-auto space-y-3">
               <form
                 onSubmit={(e) => {
@@ -474,14 +474,14 @@ export function Header() {
                         className="h-11 w-11 rounded-xl object-cover shrink-0 bg-ivory-100"
                       />
                       <div className="min-w-0 flex-1">
-                        <div className="font-bold text-xs text-cinema-900 truncate">
+                        <div className="font-bold text-xs text-cinema-900 leading-snug break-words">
                           {prod.name}
                         </div>
-                        <div className="text-[11px] text-cinema-800/70 truncate">
+                        <div className="text-[11px] text-cinema-800/70 leading-snug">
                           {prod.category_name}
                         </div>
                       </div>
-                      <div className="text-xs font-extrabold text-brand-blue">
+                      <div className="text-xs font-extrabold text-brand-blue shrink-0">
                         ₹{prod.price}
                       </div>
                     </button>
@@ -500,12 +500,12 @@ export function Header() {
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Navigation Menu"
-          className="fixed inset-0 z-50 lg:hidden bg-black/65 backdrop-blur-sm flex justify-end"
+          className="fixed inset-0 z-50 lg:hidden bg-black/65 backdrop-blur-sm flex justify-end overscroll-contain"
           onClick={(e) => {
             if (e.target === e.currentTarget) setMobileMenuOpen(false);
           }}
         >
-          <nav className="w-[min(22rem,84vw)] bg-ivory-50 text-cinema-900 h-full p-6 flex flex-col justify-between shadow-2xl overflow-y-auto">
+          <nav className="w-[min(22rem,84vw)] bg-ivory-50 text-cinema-900 h-full p-6 flex flex-col justify-between shadow-2xl overflow-y-auto custom-scrollbar overscroll-contain">
             <div className="space-y-6">
               <div className="flex items-center justify-between border-b border-ivory-300 pb-4">
                 <div className="flex items-center gap-2.5">

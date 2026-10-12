@@ -235,10 +235,10 @@ export default async function HomePage() {
                       className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="text-xs font-bold text-white truncate">
+                  <div className="text-xs font-bold text-white leading-snug">
                     {card.name}
                   </div>
-                  <div className={`text-xs font-extrabold ${card.priceColor}`}>
+                  <div className={`text-xs font-extrabold mt-0.5 ${card.priceColor}`}>
                     {card.price}
                   </div>
                 </Link>

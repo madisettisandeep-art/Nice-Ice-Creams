@@ -59,6 +59,8 @@ export function ProductPageClient({
   const canOrder =
     product.availability && (!selectedVariant || selectedVariant.available);
 
+  const layers = product.exploded_spec?.layers ?? [];
+
   const handleAdd = () => {
     if (!canOrder || !selectedVariant) return;
     addItem(product, selectedVariant.id, quantity);
@@ -68,7 +70,7 @@ export function ProductPageClient({
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-28 space-y-16">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <Link
           href={`/menu?category=${product.category_slug}`}
           className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-cinema-800 hover:text-brand-blue transition"
@@ -83,7 +85,7 @@ export function ProductPageClient({
 
       {/* Main Product Showcase & Ordering Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
-        {/* Left: High-Resolution Studio Photograph & Craft Highlights */}
+        {/* Left: High-Resolution Studio Photograph, Layer Breakdown & Craft Highlights */}
         <motion.div
           initial={{ opacity: 0, x: -24 }}
           animate={{ opacity: 1, x: 0 }}
@@ -100,6 +102,29 @@ export function ProductPageClient({
               className="h-full w-full object-cover"
             />
           </div>
+
+          {layers.length > 0 && (
+            <div className="space-y-2.5">
+              <div className="text-xs font-extrabold uppercase tracking-wider text-cinema-800/75">
+                Signature Layer-by-Layer Breakdown
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {layers.slice(0, 4).map((layer, idx) => (
+                  <div
+                    key={layer.id || idx}
+                    className="rounded-2xl bg-cinema-950 text-white border border-cinema-800 p-3.5 space-y-1"
+                  >
+                    <div className="text-[11px] font-extrabold uppercase tracking-wider text-brand-cyan leading-snug break-words">
+                      0{idx + 1} • {layer.label}
+                    </div>
+                    <div className="text-xs text-ivory-200 leading-relaxed break-words">
+                      {layer.detail}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex items-start gap-3 rounded-2xl bg-ivory-100/80 border border-ivory-300 p-4">

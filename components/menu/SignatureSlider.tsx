@@ -269,12 +269,12 @@ export const SignatureSlider = React.memo(function SignatureSlider({
                           ₹{item.price}
                         </span>
                       </div>
-                      <p className="mt-1 text-xs text-cinema-800/80 line-clamp-2">
+                      <p className="mt-1 text-xs text-cinema-800/80 leading-relaxed">
                         {item.description}
                       </p>
                     </div>
 
-                    <div className="flex items-center justify-between pt-2.5 border-t border-cinema-900/10">
+                    <div className="flex flex-wrap items-center justify-between gap-2 pt-2.5 border-t border-cinema-900/10">
                       <button
                         type="button"
                         onClick={() => openProductModal(item, false)}

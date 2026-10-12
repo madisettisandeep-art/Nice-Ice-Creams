@@ -70,7 +70,7 @@ export function CartDrawer() {
         </div>
 
         {/* Drawer Body */}
-        <div className="flex-1 overflow-y-auto p-5">
+        <div className="flex-1 min-h-0 overflow-y-auto p-4 sm:p-5 custom-scrollbar overscroll-contain">
           {items.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center text-center py-12 px-4 space-y-4">
               <div className="h-16 w-16 rounded-3xl bg-brand-blue/10 text-brand-blue flex items-center justify-center">

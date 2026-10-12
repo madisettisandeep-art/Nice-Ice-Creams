@@ -233,12 +233,12 @@ export const ProductCard = React.memo(function ProductCard({
             </div>
           </div>
 
-          <p className="mt-1.5 text-xs sm:text-sm text-cinema-800/75 line-clamp-2 leading-relaxed">
+          <p className="mt-1.5 text-xs sm:text-sm text-cinema-800/75 leading-relaxed">
             {product.description}
           </p>
         </div>
 
-        <div className="pt-2.5 flex items-center justify-between gap-2 border-t border-cinema-900/8">
+        <div className="pt-2.5 flex flex-wrap items-center justify-between gap-2 border-t border-cinema-900/8">
           <button
             type="button"
             onClick={() => openProductModal(product, false)}

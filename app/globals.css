@@ -17,15 +17,8 @@ html {
   scroll-behavior: smooth;
   background-color: #FAF6EE;
   color: #0D111C;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  display: none;
+  scrollbar-width: thin;
+  scrollbar-color: #C2185B #FAF6EE;
 }
 
 /* Hide Next.js Dev Tools "N" Indicator Portal */
@@ -44,8 +37,6 @@ body {
   text-align: start;
   overflow-x: hidden;
   background-color: #FAF6EE;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 h1, h2, h3 {
@@ -62,6 +53,47 @@ p {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Visible, Polished Vertical Scrollbars for Modals & Drawers */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 100, 181, 0.45) rgba(235, 224, 204, 0.45);
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(235, 224, 204, 0.45);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 100, 181, 0.45);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 100, 181, 0.75);
+}
+
+.custom-scrollbar-dark {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.55) rgba(255, 255, 255, 0.08);
+}
+.custom-scrollbar-dark::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.55);
+  border-radius: 9999px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.85);
 }
 
 @keyframes fadeIn {

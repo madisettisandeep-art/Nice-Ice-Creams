@@ -756,15 +756,15 @@ export function AdminDashboardClient() {
                   className="h-16 w-16 rounded-xl object-cover shrink-0 bg-ivory-100"
                 />
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center justify-between gap-2">
-                    <h4 className="font-bold text-sm text-cinema-900 truncate">
+                  <div className="flex items-start justify-between gap-2">
+                    <h4 className="font-bold text-sm text-cinema-900 leading-snug break-words">
                       {prod.name}
                     </h4>
-                    <span className="text-xs font-extrabold text-brand-blue">
+                    <span className="text-xs font-extrabold text-brand-blue shrink-0">
                       ₹{prod.price}
                     </span>
                   </div>
-                  <p className="text-[11px] text-cinema-800/65 truncate">
+                  <p className="text-[11px] text-cinema-800/65 leading-snug">
                     {prod.category_name}
                   </p>
 

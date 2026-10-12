@@ -216,7 +216,7 @@ export function CheckoutFormPanel({
           <summary className="font-bold text-cinema-900 cursor-pointer">
             Preview Formatted WhatsApp Order Message
           </summary>
-          <pre className="mt-2 whitespace-pre-wrap font-mono text-[11px] text-cinema-800 bg-white p-3 rounded-xl border border-ivory-200">
+          <pre className="mt-2 whitespace-pre-wrap break-words font-mono text-[11px] text-cinema-800 bg-white p-3 rounded-xl border border-ivory-200 max-h-60 overflow-y-auto custom-scrollbar">
             {orderResult.whatsappMessage}
           </pre>
         </details>
@@ -266,7 +266,7 @@ export function CheckoutFormPanel({
               <div className="flex-1 min-w-0">
                 <div className="flex items-start justify-between gap-2">
                   <div>
-                    <h4 className="font-display font-bold text-sm sm:text-base text-cinema-900 truncate">
+                    <h4 className="font-display font-bold text-sm sm:text-base text-cinema-900 leading-snug break-words">
                       {item.productName}
                     </h4>
                     <p className="text-[11px] text-cinema-800/65">

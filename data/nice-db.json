@@ -4244,6 +4244,50 @@
   ],
   "orders": [
     {
+      "id": "53c50d9d-85bd-47ca-9230-ac1dc58ba8aa",
+      "order_reference": "NICE-261012-TOEX",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "20426e4c-6c26-4edc-aae0-cd238028535c",
+          "order_id": "53c50d9d-85bd-47ca-9230-ac1dc58ba8aa"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "3ddcacc1-d471-419a-a316-d02e3f6b7f76",
+          "order_id": "53c50d9d-85bd-47ca-9230-ac1dc58ba8aa"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T21:29:35.754Z",
+      "updated_at": "2026-10-12T21:29:35.754Z"
+    },
+    {
       "id": "41881378-5c9e-4c0d-8460-9c10c1db4a73",
       "order_reference": "NICE-261012-E7BZ",
       "customer_name": "Sandeep Kumar",
@@ -4642,6 +4686,25 @@
   ],
   "bookings": [
     {
+      "id": "40d8e1d5-8d94-44dc-a089-a863140e5367",
+      "enquiry_reference": "PARTY-261012-60QR",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T21:29:35.781Z"
+    },
+    {
       "id": "ea1d99e2-d4a8-4160-919f-9c1946af29e1",
       "enquiry_reference": "PARTY-261012-AOU5",
       "customer_name": "Priya Rao",
@@ -4814,6 +4877,24 @@
     }
   ],
   "audit_logs": [
+    {
+      "id": "722f7c71-537b-4c3e-a9b5-2173044c2017",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T21:29:35.805Z"
+    },
+    {
+      "id": "e26e7bba-2ae7-4f9a-a210-0b0f94302982",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T21:29:35.796Z"
+    },
     {
       "id": "214fcebe-8985-4061-a198-236b7bab672b",
       "actor": "test-admin",

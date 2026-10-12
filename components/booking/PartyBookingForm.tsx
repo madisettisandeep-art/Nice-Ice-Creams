@@ -211,7 +211,7 @@ export function PartyBookingForm() {
           <summary className="font-bold text-cinema-900 cursor-pointer">
             View Prepared WhatsApp Enquiry Message
           </summary>
-          <pre className="mt-2 whitespace-pre-wrap font-mono text-[11px] text-cinema-800 bg-white p-3 rounded-xl border border-ivory-200">
+          <pre className="mt-2 whitespace-pre-wrap break-words font-mono text-[11px] text-cinema-800 bg-white p-3 rounded-xl border border-ivory-200 max-h-60 overflow-y-auto custom-scrollbar">
             {bookingResult.whatsappMessage}
           </pre>
         </details>

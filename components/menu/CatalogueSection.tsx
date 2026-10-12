@@ -309,9 +309,9 @@ export function CatalogueSection({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="sticky top-16 z-30 rounded-3xl bg-gradient-to-r from-[#FFF7F9]/95 via-[#FFFDF7]/95 to-[#F2FBF7]/95 backdrop-blur-md border border-rose-200/80 shadow-card p-3 sm:p-4 mb-8 space-y-3"
+        className="sticky top-14 sm:top-16 z-30 rounded-3xl bg-gradient-to-r from-[#FFF7F9]/95 via-[#FFFDF7]/95 to-[#F2FBF7]/95 backdrop-blur-md border border-rose-200/80 shadow-card p-2.5 sm:p-3.5 mb-8 space-y-2.5"
       >
-        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-2.5">
           {/* Search Input (Debounced) */}
           <div className="relative flex-1">
             <Search
@@ -324,7 +324,7 @@ export function CatalogueSection({
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search flavours, sundaes, shakes, ingredients (e.g. Sitaphal, Brownie, Ferrero)..."
               aria-label="Search menu products by name or ingredient"
-              className="w-full rounded-full bg-white border border-rose-200/90 pl-10 pr-9 py-2.5 text-sm text-cinema-900 placeholder:text-cinema-800/45 focus:outline-none focus:ring-2 focus:ring-[#E11D48]"
+              className="w-full rounded-full bg-white border border-rose-200/90 pl-10 pr-9 py-2 text-sm text-cinema-900 placeholder:text-cinema-800/45 focus:outline-none focus:ring-2 focus:ring-[#E11D48]"
             />
             {searchQuery && (
               <button
@@ -398,7 +398,7 @@ export function CatalogueSection({
             type="button"
             onClick={() => slideCategoryBar(-1)}
             aria-label="Slide categories left"
-            className="hidden sm:inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white hover:bg-[#E11D48] hover:text-white text-cinema-800 border border-rose-200 shadow-sm transition"
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white hover:bg-[#E11D48] hover:text-white text-cinema-800 border border-rose-200 shadow-sm transition"
           >
             <ChevronLeft className="w-4 h-4" aria-hidden="true" />
           </button>
@@ -485,7 +485,7 @@ export function CatalogueSection({
             type="button"
             onClick={() => slideCategoryBar(1)}
             aria-label="Slide categories right"
-            className="hidden sm:inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white hover:bg-[#E11D48] hover:text-white text-cinema-800 border border-rose-200 shadow-sm transition"
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white hover:bg-[#E11D48] hover:text-white text-cinema-800 border border-rose-200 shadow-sm transition"
           >
             <ChevronRight className="w-4 h-4" aria-hidden="true" />
           </button>

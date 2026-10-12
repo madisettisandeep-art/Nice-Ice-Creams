@@ -126,7 +126,7 @@ export function ProductDetailModal() {
       role="dialog"
       aria-modal="true"
       aria-labelledby="product-modal-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/75 backdrop-blur-md animate-fadeIn overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 lg:p-6 bg-black/75 backdrop-blur-md animate-fadeIn overflow-y-auto overscroll-contain"
       onClick={(e) => {
         if (e.target === e.currentTarget) closeProductModal();
       }}
@@ -135,23 +135,23 @@ export function ProductDetailModal() {
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-        className="relative w-full max-w-5xl rounded-3xl bg-ivory-50 text-cinema-900 shadow-2xl border border-ivory-300 overflow-hidden my-auto max-h-[92vh] flex flex-col lg:flex-row"
+        className="relative w-full max-w-5xl rounded-3xl bg-ivory-50 text-cinema-900 shadow-2xl border border-ivory-300 overflow-y-auto lg:overflow-hidden my-auto max-h-[92vh] lg:max-h-[88vh] flex flex-col lg:flex-row overscroll-contain custom-scrollbar"
       >
         {/* Close button */}
         <button
           type="button"
           onClick={closeProductModal}
           aria-label="Close product details"
-          className="absolute top-3.5 right-3.5 z-30 inline-flex h-10 w-10 items-center justify-center rounded-full bg-cinema-900/80 text-white hover:bg-brand-blue transition shadow-lg"
+          className="absolute top-3.5 right-3.5 z-30 inline-flex h-10 w-10 items-center justify-center rounded-full bg-cinema-900/85 text-white hover:bg-brand-blue transition shadow-lg"
         >
           <X className="w-5 h-5" aria-hidden="true" />
         </button>
 
-        {/* Left Column: High-Resolution Studio Photograph + Slide Navigation */}
-        <div className="w-full lg:w-[52%] p-4 sm:p-6 bg-gradient-to-b from-cinema-950 via-cinema-900 to-cinema-950 text-white flex flex-col justify-between gap-4">
-          <div className="flex items-center justify-between">
+        {/* Left Column: High-Resolution Studio Photograph + Slide Navigation + Full Layer Breakdown */}
+        <div className="w-full lg:w-[50%] p-4 sm:p-5 bg-gradient-to-b from-cinema-950 via-cinema-900 to-cinema-950 text-white flex flex-col justify-start gap-3.5 lg:max-h-[88vh] lg:overflow-y-auto min-h-0 custom-scrollbar-dark overscroll-contain">
+          <div className="flex flex-wrap items-center justify-between gap-2 shrink-0 pr-10 lg:pr-0">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 border border-white/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-ivory-100">
-              <ShieldCheck className="w-3.5 h-3.5 text-brand-cyan" aria-hidden="true" />
+              <ShieldCheck className="w-3.5 h-3.5 text-brand-cyan shrink-0" aria-hidden="true" />
               <span>100% Pure Milk &amp; Fresh Cream</span>
             </span>
 
@@ -178,7 +178,7 @@ export function ProductDetailModal() {
             </div>
           </div>
 
-          <div className="relative flex-1 min-h-[260px] sm:min-h-[340px] flex items-center justify-center overflow-hidden rounded-2xl bg-black/40 border border-white/10">
+          <div className="relative w-full aspect-[16/10] max-h-[210px] sm:max-h-[250px] shrink-0 flex items-center justify-center overflow-hidden rounded-2xl bg-black/40 border border-white/10">
             <AnimatePresence mode="wait" initial={false}>
               <motion.img
                 key={product.slug}
@@ -191,35 +191,40 @@ export function ProductDetailModal() {
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 exit={{ opacity: 0, x: slideDir > 0 ? -60 : 60, scale: 0.96 }}
                 transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
-                className="w-full h-full max-h-[380px] object-contain p-2"
+                className="w-full h-full object-contain p-1.5"
               />
             </AnimatePresence>
           </div>
 
-          {/* Ingredient Layer Breakdown Pills */}
+          {/* Ingredient Layer Breakdown Cards — Full Untruncated Details */}
           {layers.length > 0 && (
-            <div className="grid grid-cols-2 gap-2">
-              {layers.slice(0, 4).map((layer, idx) => (
-                <div
-                  key={layer.id || idx}
-                  className="rounded-xl bg-white/5 border border-white/10 px-3 py-2"
-                >
-                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-cyan">
-                    0{idx + 1} • {layer.label}
+            <div className="space-y-2 shrink-0">
+              <div className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-ivory-300/80 px-0.5">
+                Signature Layer-by-Layer Breakdown
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {layers.slice(0, 4).map((layer, idx) => (
+                  <div
+                    key={layer.id || idx}
+                    className="rounded-xl bg-white/8 border border-white/15 px-3 py-2.5 flex flex-col justify-start gap-0.5"
+                  >
+                    <div className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-brand-cyan leading-snug break-words">
+                      0{idx + 1} • {layer.label}
+                    </div>
+                    <div className="text-[11px] sm:text-xs text-ivory-200 leading-snug break-words">
+                      {layer.detail}
+                    </div>
                   </div>
-                  <div className="text-[11px] text-ivory-300 truncate">
-                    {layer.detail}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           )}
         </div>
 
         {/* Right Column: Product Details & Ordering Controls */}
-        <div className="w-full lg:w-[48%] p-5 sm:p-7 overflow-y-auto flex flex-col justify-between space-y-5">
-          <div className="space-y-4">
-            <div className="flex flex-wrap items-center gap-2">
+        <div className="w-full lg:w-[50%] p-4 sm:p-6 lg:max-h-[88vh] lg:overflow-y-auto min-h-0 custom-scrollbar overscroll-contain flex flex-col justify-between gap-4">
+          <div className="space-y-3.5">
+            <div className="flex flex-wrap items-center gap-2 pr-11">
               <span className="inline-flex items-center rounded-full bg-brand-blue/10 text-brand-blue px-3 py-1 text-xs font-bold uppercase tracking-wider">
                 {product.category_name}
               </span>
@@ -240,7 +245,7 @@ export function ProductDetailModal() {
             <div className="flex items-baseline justify-between gap-4">
               <h2
                 id="product-modal-title"
-                className="font-display text-2xl sm:text-3xl font-bold text-cinema-900"
+                className="font-display text-2xl sm:text-3xl font-bold text-cinema-900 leading-tight"
               >
                 {product.name}
               </h2>
@@ -262,7 +267,7 @@ export function ProductDetailModal() {
 
             {/* Serving Size / Variant Selector */}
             {product.variants.length > 0 && (
-              <div className="space-y-2 pt-1">
+              <div className="space-y-2 pt-0.5">
                 <label className="block text-xs font-bold uppercase tracking-wider text-cinema-800/75">
                   Select Serving Size / Variant
                 </label>
@@ -275,13 +280,13 @@ export function ProductDetailModal() {
                         type="button"
                         disabled={!variant.available}
                         onClick={() => setSelectedVariantId(variant.id)}
-                        className={`rounded-xl border px-3 py-2.5 text-left transition ${
+                        className={`rounded-xl border px-3 py-2 text-left transition ${
                           isSelected
                             ? "border-brand-blue bg-brand-blue/10 ring-2 ring-brand-blue/30"
                             : "border-ivory-300 bg-white hover:border-brand-cyan"
                         } ${!variant.available ? "opacity-45 cursor-not-allowed" : ""}`}
                       >
-                        <div className="text-xs font-bold text-cinema-900">
+                        <div className="text-xs font-bold text-cinema-900 leading-snug">
                           {variant.name}
                         </div>
                         <div className="text-sm font-extrabold text-brand-blue mt-0.5">
@@ -295,12 +300,12 @@ export function ProductDetailModal() {
             )}
 
             {/* Verified Ingredients & Allergens */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-0.5">
               <div className="rounded-xl bg-ivory-100 border border-ivory-300 p-3">
                 <div className="text-[11px] font-bold uppercase tracking-wider text-cinema-800/70 mb-1">
                   Key Ingredients
                 </div>
-                <div className="text-xs text-cinema-900 leading-relaxed">
+                <div className="text-xs text-cinema-900 leading-relaxed break-words">
                   {product.ingredients.join(" • ")}
                 </div>
               </div>
@@ -308,7 +313,7 @@ export function ProductDetailModal() {
                 <div className="text-[11px] font-bold uppercase tracking-wider text-cinema-800/70 mb-1">
                   Allergen Info
                 </div>
-                <div className="text-xs font-medium text-amber-900 leading-relaxed">
+                <div className="text-xs font-medium text-amber-900 leading-relaxed break-words">
                   Contains: {product.allergens.join(", ")}
                 </div>
               </div>
@@ -316,8 +321,8 @@ export function ProductDetailModal() {
 
             {/* Recommended Pairings */}
             {recommendedProducts.length > 0 && (
-              <div className="pt-1">
-                <div className="text-xs font-bold uppercase tracking-wider text-cinema-800/70 mb-2">
+              <div className="pt-0.5">
+                <div className="text-xs font-bold uppercase tracking-wider text-cinema-800/70 mb-1.5">
                   Pairs Wonderfully With
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -335,7 +340,7 @@ export function ProductDetailModal() {
                           onError={(e) => {
                             e.currentTarget.src = "/menu/vanilla.webp?v=4";
                           }}
-                          className="w-5 h-5 rounded-full object-cover"
+                          className="w-5 h-5 rounded-full object-cover shrink-0"
                         />
                         <span>{rec.name}</span>
                         <span className="text-brand-blue font-bold">
@@ -350,9 +355,9 @@ export function ProductDetailModal() {
           </div>
 
           {/* Quantity & Add to Cart Action Bar */}
-          <div className="pt-4 border-t border-ivory-300 space-y-3">
+          <div className="pt-3.5 border-t border-ivory-300 space-y-3 shrink-0">
             <div className="flex items-center gap-3">
-              <div className="inline-flex items-center rounded-full border border-ivory-300 bg-white p-1">
+              <div className="inline-flex items-center rounded-full border border-ivory-300 bg-white p-1 shrink-0">
                 <button
                   type="button"
                   onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -362,7 +367,7 @@ export function ProductDetailModal() {
                   <Minus className="w-4 h-4" aria-hidden="true" />
                 </button>
                 <span
-                  className="w-10 text-center font-bold text-base text-cinema-900"
+                  className="w-9 text-center font-bold text-base text-cinema-900"
                   aria-live="polite"
                 >
                   {quantity}
@@ -381,7 +386,7 @@ export function ProductDetailModal() {
                 type="button"
                 disabled={!canOrder}
                 onClick={handleAddToCart}
-                className={`flex-1 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm sm:text-base font-bold text-white shadow-lg transition ${
+                className={`flex-1 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm sm:text-base font-bold text-white shadow-lg transition ${
                   !canOrder
                     ? "bg-gray-400 cursor-not-allowed"
                     : justAdded
@@ -391,12 +396,12 @@ export function ProductDetailModal() {
               >
                 {justAdded ? (
                   <>
-                    <Check className="w-5 h-5" aria-hidden="true" />
+                    <Check className="w-5 h-5 shrink-0" aria-hidden="true" />
                     <span>Added to Cart (₹{totalPrice})</span>
                   </>
                 ) : canOrder ? (
                   <>
-                    <ShoppingBag className="w-5 h-5" aria-hidden="true" />
+                    <ShoppingBag className="w-5 h-5 shrink-0" aria-hidden="true" />
                     <span>Add to Order • ₹{totalPrice}</span>
                   </>
                 ) : (
@@ -405,7 +410,7 @@ export function ProductDetailModal() {
               </button>
             </div>
 
-            <div className="flex items-center justify-between text-xs text-cinema-800/75">
+            <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-cinema-800/75">
               <button
                 type="button"
                 onClick={closeProductModal}
@@ -413,7 +418,7 @@ export function ProductDetailModal() {
               >
                 ← Continue Shopping
               </button>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                 <Link
                   href={`/menu/${product.slug}`}
                   onClick={closeProductModal}
