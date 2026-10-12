@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Georgia", "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@property --animation-reduced {
+  syntax: "*";
+  inherits: false;
+  initial-value: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF6EE;
+  color: #0D111C;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+/* Hide Next.js Dev Tools "N" Indicator Portal */
+nextjs-portal,
+[data-nextjs-toast],
+[data-nextjs-dev-tools-button],
+#__next-build-watcher {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body {
+  line-height: 1.5;
+  text-align: start;
+  overflow-x: hidden;
+  background-color: #FAF6EE;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.22s ease-out forwards;
+}
+
+/* Continuous Sliding Marquee Keyframes (Compositor-only transform) */
+@keyframes marqueeSlideLeft {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueeSlideRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marqueeSlideLeft 38s linear infinite;
+  --animation-reduced: none;
+  will-change: transform;
+}
+
+.animate-marquee-right {
+  animation: marqueeSlideRight 42s linear infinite;
+  --animation-reduced: none;
+  will-change: transform;
+}
+
+.marquee-container:hover .animate-marquee-left,
+.marquee-container:hover .animate-marquee-right,
+.marquee-paused .animate-marquee-left,
+.marquee-paused .animate-marquee-right {
+  animation-play-state: paused;
+}
+
+/* Native CSS Scroll-Driven Animations (with @supports feature detection per modern-web-guidance) */
+@keyframes scrollCardEntry {
+  0% {
+    opacity: 0.15;
+    transform: translate3d(0, 28px, 0) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes horizontalCarouselSlide {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.55;
+    transform: scale(0.92);
+  }
+}
+
+@supports ((animation-timeline: view()) and (animation-range: entry)) {
+  .scroll-driven-card {
+    animation: scrollCardEntry auto cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-timeline: view(block);
+    animation-range: entry 5% cover 24%;
+    --animation-reduced: none;
+  }
+
+  .carousel-snap-scroller > .carousel-slide-item {
+    animation: horizontalCarouselSlide auto linear both;
+    view-timeline: --carousel-item inline;
+    animation-timeline: --carousel-item;
+    --animation-reduced: none;
+  }
+}
+
+/* Accessible Reduced Motion Handling (Targeted, avoiding 0.01ms flash anti-pattern) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee-left,
+  .animate-marquee-right,
+  .scroll-driven-card,
+  .carousel-slide-item {
+    animation: var(--animation-reduced, none) !important;
+    transition: none !important;
+  }
+}
+
+/* Defer offscreen category rendering while preserving intrinsic scrollbar height */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 520px;
+}

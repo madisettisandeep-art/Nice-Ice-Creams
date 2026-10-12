@@ -1,0 +1,4909 @@
+{
+  "categories": [
+    {
+      "id": "cat-classic",
+      "name": "Classic Flavours",
+      "slug": "classic-flavours",
+      "subtitle": "Timeless single & double scoops churned with pure milk and cream",
+      "accent_color": "#2E7D32",
+      "display_order": 1
+    },
+    {
+      "id": "cat-premium",
+      "name": "Premium Flavours",
+      "slug": "premium-flavours",
+      "subtitle": "Rich nut-studded, berry-swirled, and traditional kulfi favourites",
+      "accent_color": "#9A3412",
+      "display_order": 2
+    },
+    {
+      "id": "cat-chocolate",
+      "name": "Chocolate Flavours",
+      "slug": "chocolate-flavours",
+      "subtitle": "Deep cocoa creations from crunchy chips to decadent Belgium Chocolate",
+      "accent_color": "#4E2614",
+      "display_order": 3
+    },
+    {
+      "id": "cat-seasonal",
+      "name": "Fruit-Based / Seasonal",
+      "slug": "fruit-seasonal",
+      "subtitle": "Crafted with real seasonal orchard pulp—Sitaphal, Mango, Pink Guava & Chikoo",
+      "accent_color": "#D9531E",
+      "display_order": 4
+    },
+    {
+      "id": "cat-dessert",
+      "name": "Dessert-Inspired Flavours",
+      "slug": "dessert-inspired",
+      "subtitle": "Iconic patisserie & celebratory Indian sweets reimagined as ice cream",
+      "accent_color": "#8E24AA",
+      "display_order": 5
+    },
+    {
+      "id": "cat-specials",
+      "name": "Specials & Signature Items",
+      "slug": "specials-signature",
+      "subtitle": "House-favourite Fruit Salad with Ice Cream, Badam Milk, Cassata & Cold Cocoa",
+      "accent_color": "#AD1457",
+      "display_order": 6
+    },
+    {
+      "id": "cat-shakes",
+      "name": "Premium Ice Cream Shakes",
+      "slug": "premium-shakes",
+      "subtitle": "Thick, indulgent shakes blended with premium scoops, chocolates & nuts",
+      "accent_color": "#00838F",
+      "display_order": 7
+    },
+    {
+      "id": "cat-sundaes",
+      "name": "Ice Cream Sundaes",
+      "slug": "ice-cream-sundaes",
+      "subtitle": "Multi-scoop theatre—hot brownie sizzlers, roasted nuts, fruit medleys & Death by Chocolate",
+      "accent_color": "#1565C0",
+      "display_order": 8
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-vanilla",
+      "slug": "vanilla",
+      "name": "Vanilla",
+      "category_id": "cat-classic",
+      "category_name": "Classic Flavours",
+      "category_slug": "classic-flavours",
+      "description": "Our signature velvety Vanilla ice cream churned from pure farm milk and fresh dairy cream with delicate aromatic vanilla notes.",
+      "image_url": "/menu/vanilla.webp?v=4",
+      "cutout_url": "/menu/vanilla.webp?v=4",
+      "price": 40,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 40,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 74,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 168,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Dairy Cream",
+        "Cane Sugar",
+        "Natural Vanilla Extract"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "chocolate",
+        "brownie-with-ice-cream-sizzler",
+        "fruit-salad-with-ice-cream"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#FDF5DF",
+        "secondaryScoopColor": "#F5E6C4",
+        "sauceColor": "#F3D39A",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#D7B377",
+        "ambientGlow": "#FFF3D1",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Chilled natural wood serving vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Pure Milk Vanilla Core",
+            "detail": "Slow-churned 1986 heritage dairy recipe",
+            "elevationY": -0.2
+          },
+          {
+            "id": "top-scoop",
+            "label": "Whipped Cream Crown",
+            "detail": "Double-aerated creamy vanilla peaks",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Aromatic Vanilla Bean Dust",
+            "detail": "Delicate warm finish & fresh mint leaf",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-strawberry",
+      "slug": "strawberry",
+      "name": "Strawberry",
+      "category_id": "cat-classic",
+      "category_name": "Classic Flavours",
+      "category_slug": "classic-flavours",
+      "description": "Bright, refreshing strawberry ice cream blended with sweet berry crush and pure dairy cream for a timeless pink scoop.",
+      "image_url": "/menu/strawberry.webp?v=4",
+      "cutout_url": "/menu/strawberry.webp?v=4",
+      "price": 50,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 50,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 93,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 210,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Strawberry Crush",
+        "Cane Sugar"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "vanilla",
+        "mixed-berries",
+        "strawberry-cheese-cake"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#F47C98",
+        "secondaryScoopColor": "#FDA4B8",
+        "sauceColor": "#D81B60",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#E91E63",
+        "ambientGlow": "#FFD0DC",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Natural wood serving bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Sweet Berry Cream Scoop",
+            "detail": "Pure milk infused with ripe strawberries",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Strawberry Crush Ribbon",
+            "detail": "Tangy-sweet crimson berry swirl",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Fresh Berry & Mint Accents",
+            "detail": "Orchard berry pieces",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-butterscotch",
+      "slug": "butterscotch",
+      "name": "Butterscotch",
+      "category_id": "cat-classic",
+      "category_name": "Classic Flavours",
+      "category_slug": "classic-flavours",
+      "description": "Golden caramelised brown-butter ice cream studded with crunchy golden butterscotch praline pearls and cashew bits.",
+      "image_url": "/menu/butterscotch.webp?v=4",
+      "cutout_url": "/menu/butterscotch.webp?v=4",
+      "price": 50,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 50,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 93,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 210,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Butterscotch Praline",
+        "Cashew Bits",
+        "Caramel"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Cashew)"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "caramel-nuts",
+        "nuts-heaven-sundae",
+        "caramel-carnival"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#F6BE58",
+        "secondaryScoopColor": "#FAD48B",
+        "sauceColor": "#C87A19",
+        "toppingType": "caramel-praline",
+        "toppingColor": "#D9822B",
+        "ambientGlow": "#FFE2A8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Chilled natural wood bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Golden Butterscotch Scoop",
+            "detail": "Brown-butter & caramel dairy base",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Warm Butter-Caramel Swirl",
+            "detail": "Slow-simmered golden caramel ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Crunchy Praline & Cashew Pearls",
+            "detail": "Caramelised nut brittle crunch",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-pista-nuts",
+      "slug": "pista-nuts",
+      "name": "Pista Nuts",
+      "category_id": "cat-classic",
+      "category_name": "Classic Flavours",
+      "category_slug": "classic-flavours",
+      "description": "Rich pistachio-infused cream folded with roasted green pistachio slivers and a whisper of green cardamom.",
+      "image_url": "/menu/pista-nuts.webp?v=4",
+      "cutout_url": "/menu/pista-nuts.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Roasted Pistachios",
+        "Cardamom"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Pistachio)"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "malai-kulfi",
+        "badam-milk-with-ice-cream",
+        "cassata"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#98D078",
+        "secondaryScoopColor": "#B7E29E",
+        "sauceColor": "#558B2F",
+        "toppingType": "pistachio-crumb",
+        "toppingColor": "#7CB342",
+        "ambientGlow": "#D7F5C6",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Natural wood serving bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Pistachio Cream Scoop",
+            "detail": "Pure milk churned with pistachio paste",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Saffron-Cardamom Essence",
+            "detail": "Delicate aromatic infusion",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Roasted Pistachio Slivers",
+            "detail": "Crunchy whole & crushed pista nuts",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-black-currant",
+      "slug": "black-currant",
+      "name": "Black Currant",
+      "category_id": "cat-classic",
+      "category_name": "Classic Flavours",
+      "category_slug": "classic-flavours",
+      "description": "Vibrant royal-purple black currant ice cream bursting with plump, tangy-sweet black currants and velvety dairy cream.",
+      "image_url": "/menu/black-currant.webp?v=4",
+      "cutout_url": "/menu/black-currant.webp?v=4",
+      "price": 55,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 55,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 102,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 231,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Black Currant Berries",
+        "Black Currant Compote"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "mixed-berries",
+        "forest-fruit-sundae",
+        "fruit-ninja"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#9C7AE0",
+        "secondaryScoopColor": "#B99FF0",
+        "sauceColor": "#4A148C",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#6A1B9A",
+        "ambientGlow": "#E1D0FF",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Signature wooden scoop vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Lavender Black Currant Scoop",
+            "detail": "Creamy berry-infused triple scoop",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Dark Currant Reduction",
+            "detail": "Tart-sweet purple berry ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Plump Black Currants & Mint",
+            "detail": "Whole softened currant berries",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-caramel-nuts",
+      "slug": "caramel-nuts",
+      "name": "Caramel Nuts",
+      "category_id": "cat-premium",
+      "category_name": "Premium Flavours",
+      "category_slug": "premium-flavours",
+      "description": "Silky caramel ice cream loaded with roasted almonds and cashews, finished with ribbons of golden toffee sauce.",
+      "image_url": "/menu/caramel-nuts.webp?v=4",
+      "cutout_url": "/menu/caramel-nuts.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Roasted Almonds",
+        "Roasted Cashews",
+        "Caramel Sauce"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond, Cashew)"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "butterscotch",
+        "nuts-heaven-sundae",
+        "caramel-carnival"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#DA9448",
+        "secondaryScoopColor": "#ECB476",
+        "sauceColor": "#8C4A08",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#C68B59",
+        "ambientGlow": "#FFE0BA",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Glass Bowl",
+            "detail": "Crystal-clear dessert cup",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Salted Caramel Cream Scoop",
+            "detail": "Rich golden caramel dairy base",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Toffee Fudge Ribbon",
+            "detail": "Warm amber caramel drizzle",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Toasted Almonds & Cashews",
+            "detail": "Hand-roasted nut medley",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-malai-kulfi",
+      "slug": "malai-kulfi",
+      "name": "Malai Kulfi",
+      "category_id": "cat-premium",
+      "category_name": "Premium Flavours",
+      "category_slug": "premium-flavours",
+      "description": "Traditional slow-reduced rabri malai kulfi churned into a dense, creamy scoop with saffron strands, pistachio, and almond flakes.",
+      "image_url": "/menu/malai-kulfi.webp?v=4",
+      "cutout_url": "/menu/malai-kulfi.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Slow-Reduced Milk Malai",
+        "Fresh Cream",
+        "Saffron",
+        "Almonds",
+        "Pistachios",
+        "Cardamom"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond, Pistachio)"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "badam-milk-with-ice-cream",
+        "gulab-jamoon",
+        "pista-nuts"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#F6E8C0",
+        "secondaryScoopColor": "#FDF4DC",
+        "sauceColor": "#E6A100",
+        "toppingType": "pistachio-crumb",
+        "toppingColor": "#9CCC65",
+        "ambientGlow": "#FFF2C6",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Glass Coupe",
+            "detail": "Artisan serving cup",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Slow-Reduced Malai Scoop",
+            "detail": "Dense rabri-inspired dairy richness",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Kesar Cardamom Infusions",
+            "detail": "Aromatic saffron & elaichi notes",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Slivered Badam & Pista",
+            "detail": "Traditional dry-fruit crown",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-cookies-and-cream",
+      "slug": "cookies-and-cream",
+      "name": "Cookies & Cream",
+      "category_id": "cat-premium",
+      "category_name": "Premium Flavours",
+      "category_slug": "premium-flavours",
+      "description": "Sweet cream ice cream generously folded with crushed dark chocolate sandwich cookies for the ultimate cream-and-crunch contrast.",
+      "image_url": "/menu/cookies-and-cream.webp?v=4",
+      "cutout_url": "/menu/cookies-and-cream.webp?v=4",
+      "price": 55,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 55,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 102,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 231,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Chocolate Sandwich Cookies",
+        "Vanilla Extract"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "oreo-shake",
+        "choco-crunch",
+        "death-by-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#EFECE6",
+        "secondaryScoopColor": "#DCD6CE",
+        "sauceColor": "#2B1B17",
+        "toppingType": "oreo-cookie",
+        "toppingColor": "#332621",
+        "ambientGlow": "#F5F5F5",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Glass Bowl",
+            "detail": "Clear dessert vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Sweet Cream Base",
+            "detail": "Pure milk & vanilla cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Dark Cocoa Crumb Swirl",
+            "detail": "Velvety biscuit infusion",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Chunky Chocolate Cookie Pieces",
+            "detail": "Crisp cocoa wafer chunks",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-arabian-delight",
+      "slug": "arabian-delight",
+      "name": "Arabian Delight",
+      "category_id": "cat-premium",
+      "category_name": "Premium Flavours",
+      "category_slug": "premium-flavours",
+      "description": "An opulent Middle-Eastern-inspired scoop blending honeyed dates, figs, roasted cashews, and toasted almonds in rich cream.",
+      "image_url": "/menu/arabian-delight.webp?v=4",
+      "cutout_url": "/menu/arabian-delight.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Dates",
+        "Figs",
+        "Roasted Cashews",
+        "Almonds",
+        "Honey"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond, Cashew)"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "american-nuts",
+        "malai-kulfi",
+        "nuts-heaven-sundae"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#CD845F",
+        "secondaryScoopColor": "#E0A483",
+        "sauceColor": "#6D3B1E",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#C59B6D",
+        "ambientGlow": "#F9D8C0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Glass Bowl",
+            "detail": "Artisan glass vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Date & Honey Cream Scoop",
+            "detail": "Rich caramel-date infused dairy",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Spiced Fig & Honey Nectar",
+            "detail": "Velvety Middle-Eastern reduction",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Roasted Cashews & Almonds",
+            "detail": "Golden toasted dry fruits",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-american-nuts",
+      "slug": "american-nuts",
+      "name": "American Nuts",
+      "category_id": "cat-premium",
+      "category_name": "Premium Flavours",
+      "category_slug": "premium-flavours",
+      "description": "A festive fiesta of sweet fruit jellies, golden raisins, roasted cashews, and almonds folded into pineapple-kissed cream.",
+      "image_url": "/menu/american-nuts.webp?v=4",
+      "cutout_url": "/menu/american-nuts.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Roasted Cashews",
+        "Almonds",
+        "Tutty Fruity Jellies",
+        "Pineapple Swirl"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond, Cashew)"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "nuts-heaven-sundae",
+        "american-beauty-sundae",
+        "fruit-ninja"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#EBA873",
+        "secondaryScoopColor": "#F7C69C",
+        "sauceColor": "#D97724",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#E09F5A",
+        "ambientGlow": "#FFE4CA",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Glass Bowl",
+            "detail": "Crystal serving cup",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "American Nut & Fruit Scoop",
+            "detail": "Creamy sweet-nutty signature base",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Pineapple & Caramel Glaze",
+            "detail": "Bright tropical-caramel swirl",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Roasted Cashews, Almonds & Jewels",
+            "detail": "Crunchy nut & fruit confetti",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-fruit-ninja",
+      "slug": "fruit-ninja",
+      "name": "Fruit Ninja",
+      "category_id": "cat-premium",
+      "category_name": "Premium Flavours",
+      "category_slug": "premium-flavours",
+      "description": "Lively multi-fruit ice cream packed with diced orchard fruits, berry ribbons, and refreshing tropical sweetness.",
+      "image_url": "/menu/fruit-ninja.webp?v=4",
+      "cutout_url": "/menu/fruit-ninja.webp?v=4",
+      "price": 55,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 55,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 102,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 231,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Mixed Fruit Compote",
+        "Strawberry & Mango Pieces"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "forest-fruit-sundae",
+        "fruit-salad-with-ice-cream",
+        "mixed-berries"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#EE5F7D",
+        "secondaryScoopColor": "#F996AC",
+        "sauceColor": "#C2185B",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#FF4081",
+        "ambientGlow": "#FFD2DF",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Glass Bowl",
+            "detail": "Crystal serving bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Orchard Medley Scoop",
+            "detail": "Creamy multi-fruit dairy base",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Tropical Berry Crush",
+            "detail": "Sweet-tangy fruit reduction",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Diced Fruit & Berry Crown",
+            "detail": "Colorful fruit pieces",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-mixed-berries",
+      "slug": "mixed-berries",
+      "name": "Mixed Berries",
+      "category_id": "cat-premium",
+      "category_name": "Premium Flavours",
+      "category_slug": "premium-flavours",
+      "description": "Luscious berry-magenta ice cream crafted with blueberries, blackberries, raspberries, and sweet strawberry compote.",
+      "image_url": "/menu/mixed-berries.webp?v=4",
+      "cutout_url": "/menu/mixed-berries.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Blueberries",
+        "Cranberries",
+        "Strawberry & Raspberry Compote"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "forest-fruit-sundae",
+        "black-currant",
+        "strawberry-cheese-cake"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#C33A6C",
+        "secondaryScoopColor": "#E06391",
+        "sauceColor": "#880E4F",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#3949AB",
+        "ambientGlow": "#F8BBD0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Glass Bowl",
+            "detail": "Clear glass dessert vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Wild Berry Cream Scoop",
+            "detail": "Rich magenta berry-churned ice cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Forest Berry Compote",
+            "detail": "Tart-sweet three-berry swirl",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Whole Blueberries & Berry Jewels",
+            "detail": "Plump antioxidant berries",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-chocolate",
+      "slug": "chocolate",
+      "name": "Chocolate",
+      "category_id": "cat-chocolate",
+      "category_name": "Chocolate Flavours",
+      "category_slug": "chocolate-flavours",
+      "description": "Classic rich Dutch-process chocolate ice cream churned with pure milk and fresh cream for an unmistakably smooth cocoa finish.",
+      "image_url": "/menu/chocolate.webp?v=4",
+      "cutout_url": "/menu/chocolate.webp?v=4",
+      "price": 55,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 55,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 102,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 231,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Rich Cocoa Solids",
+        "Cane Sugar"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "american-beauty-sundae",
+        "death-by-chocolate",
+        "chocolate-blast-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#261811",
+        "primaryScoopColor": "#734830",
+        "secondaryScoopColor": "#8D5B3E",
+        "sauceColor": "#3B2014",
+        "toppingType": "choco-chips",
+        "toppingColor": "#4E2A1A",
+        "ambientGlow": "#D7B8A0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Matte Ceramic Cocoa Bowl",
+            "detail": "Deep espresso-toned bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Rich Chocolate Scoop",
+            "detail": "Smooth cocoa-infused pure cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Warm Chocolate Fudge Swirl",
+            "detail": "Glossy dark chocolate sauce",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Artisan Chocolate Squares",
+            "detail": "Crisp dark chocolate batons",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-choco-chips",
+      "slug": "choco-chips",
+      "name": "Choco Chips",
+      "category_id": "cat-chocolate",
+      "category_name": "Chocolate Flavours",
+      "category_slug": "chocolate-flavours",
+      "description": "Creamy chocolate ice cream speckled throughout with crisp dark chocolate chips that snap with every spoonful.",
+      "image_url": "/menu/choco-chips.webp?v=4",
+      "cutout_url": "/menu/choco-chips.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Cocoa",
+        "Semi-Sweet Chocolate Chips"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "death-by-chocolate",
+        "brownie-with-ice-cream-sizzler",
+        "choco-crunch"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#261811",
+        "primaryScoopColor": "#805236",
+        "secondaryScoopColor": "#9A6544",
+        "sauceColor": "#3B2014",
+        "toppingType": "choco-chips",
+        "toppingColor": "#2D1810",
+        "ambientGlow": "#DEC0A8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Dark Ceramic Bowl",
+            "detail": "Chilled cocoa vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Velvet Chocolate Scoop",
+            "detail": "Pure dairy cocoa base",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Choco Dip Ribbon",
+            "detail": "Silky chocolate glaze",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Semi-Sweet Choco Chips",
+            "detail": "Abundant crisp chocolate drops",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-choco-crunch",
+      "slug": "choco-crunch",
+      "name": "Choco Crunch",
+      "category_id": "cat-chocolate",
+      "category_name": "Chocolate Flavours",
+      "category_slug": "chocolate-flavours",
+      "description": "Decadent chocolate ice cream layered with crispy chocolate-coated honeycomb & wafer pearls for irresistible texture.",
+      "image_url": "/menu/choco-crunch.webp?v=4",
+      "cutout_url": "/menu/choco-crunch.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Cocoa",
+        "Crispy Chocolate Wafer Pearls",
+        "Chocolate Flakes"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "kitkat-shake",
+        "ferrero-shake",
+        "belgium-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#261811",
+        "primaryScoopColor": "#8E5C3A",
+        "secondaryScoopColor": "#A87049",
+        "sauceColor": "#3B2014",
+        "toppingType": "choco-chips",
+        "toppingColor": "#5D3A24",
+        "ambientGlow": "#E5C6AC",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Dark Ceramic Bowl",
+            "detail": "Signature cocoa bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Malted Chocolate Scoop",
+            "detail": "Rich chocolate dairy cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Warm Fudge Drizzle",
+            "detail": "Double-cocoa ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Crispy Wafer & Cocoa Crunch",
+            "detail": "Crunchy chocolate pearls & flakes",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-belgium-chocolate",
+      "slug": "belgium-chocolate",
+      "name": "Belgium Chocolate",
+      "category_id": "cat-chocolate",
+      "category_name": "Chocolate Flavours",
+      "category_slug": "chocolate-flavours",
+      "description": "Our darkest, most luxurious chocolate scoop crafted with rich Belgian couverture cocoa and shaved dark chocolate curls.",
+      "image_url": "/menu/belgium-chocolate.webp?v=4",
+      "cutout_url": "/menu/belgium-chocolate.webp?v=4",
+      "price": 65,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 65,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 120,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 273,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Belgian Dark Couverture Chocolate",
+        "Dark Chocolate Shavings"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "death-by-chocolate",
+        "belgium-chocolate-shake",
+        "nutty-death-by-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#1E120D",
+        "primaryScoopColor": "#4E2E20",
+        "secondaryScoopColor": "#683E2B",
+        "sauceColor": "#24120B",
+        "toppingType": "choco-chips",
+        "toppingColor": "#381E14",
+        "ambientGlow": "#C8A690",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Obsidian Cocoa Bowl",
+            "detail": "Chilled dark ceramic vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Belgian Couverture Scoop",
+            "detail": "Intense 70% dark cocoa cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Ganache Silk Ribbon",
+            "detail": "Velvety dark chocolate truffle swirl",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Belgian Dark Shavings & Batons",
+            "detail": "Tempered chocolate curls",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-fresh-sitaphal",
+      "slug": "fresh-sitaphal",
+      "name": "Fresh Sitaphal",
+      "category_id": "cat-seasonal",
+      "category_name": "Fruit-Based / Seasonal",
+      "category_slug": "fruit-seasonal",
+      "description": "A beloved regional masterpiece made with real, hand-deseeded custard apple (Sitaphal) pulp folded into pure cream.",
+      "image_url": "/menu/fresh-sitaphal.webp?v=4",
+      "cutout_url": "/menu/fresh-sitaphal.webp?v=4",
+      "price": 80,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 80,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 148,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 336,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Fresh Sitaphal (Custard Apple) Pulp",
+        "Cane Sugar"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": true,
+      "recommended_slugs": [
+        "natural-mango",
+        "malai-kulfi",
+        "fruit-salad-with-ice-cream"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#F8F2DE",
+        "secondaryScoopColor": "#EDE3C4",
+        "sauceColor": "#D8CBA8",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#EFE8D0",
+        "ambientGlow": "#F5FAD8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Rustic orchard wood bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Creamy Sitaphal Scoop",
+            "detail": "Pure cream churned with custard apple",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Real Custard Apple Pulp",
+            "detail": "Naturally grainy, sweet sitaphal pearls",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Fresh Sitaphal Nectar Crown",
+            "detail": "Zero artificial flavouring",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-natural-mango",
+      "slug": "natural-mango",
+      "name": "Natural Mango",
+      "category_id": "cat-seasonal",
+      "category_name": "Fruit-Based / Seasonal",
+      "category_slug": "fruit-seasonal",
+      "description": "Sun-ripened Alphonso & Banganapalli mango pulp churned with pure dairy cream for the taste of Indian summer in every scoop.",
+      "image_url": "/menu/natural-mango.webp?v=4",
+      "cutout_url": "/menu/natural-mango.webp?v=4",
+      "price": 80,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 80,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 148,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 336,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Natural Ripe Mango Pulp",
+        "Cane Sugar"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": true,
+      "recommended_slugs": [
+        "mango-shake",
+        "forest-fruit-sundae",
+        "fresh-sitaphal"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#FCBC34",
+        "secondaryScoopColor": "#FFD166",
+        "sauceColor": "#E68A00",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#FFA000",
+        "ambientGlow": "#FFE89E",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Natural wood serving bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Alphonso Mango Cream Scoop",
+            "detail": "Lush golden mango dairy base",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Ripe Mango Pulp Swirl",
+            "detail": "Concentrated orchard mango ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Diced Golden Mango Chunks",
+            "detail": "Real seasonal fruit pieces",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-pink-guava",
+      "slug": "pink-guava",
+      "name": "Pink Guava",
+      "category_id": "cat-seasonal",
+      "category_name": "Fruit-Based / Seasonal",
+      "category_slug": "fruit-seasonal",
+      "description": "Fragrant, coral-pink guava ice cream made from ripe orchard guavas with a nostalgic optional hint of tangy spice.",
+      "image_url": "/menu/pink-guava.webp?v=4",
+      "cutout_url": "/menu/pink-guava.webp?v=4",
+      "price": 80,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 80,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 148,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 336,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Ripe Pink Guava Pulp",
+        "Cane Sugar"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": true,
+      "recommended_slugs": [
+        "fresh-sitaphal",
+        "natural-mango",
+        "fruit-ninja"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#F48A94",
+        "secondaryScoopColor": "#FAAAB2",
+        "sauceColor": "#D84356",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#E55B6B",
+        "ambientGlow": "#FFD4D8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Natural wood serving bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Coral Pink Guava Scoop",
+            "detail": "Velvety guava-infused dairy cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Orchard Guava Nectar",
+            "detail": "Aromatic tropical guava swirl",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Fresh Guava Pearls",
+            "detail": "Delicate tropical fruit finish",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-chikoo",
+      "slug": "chikoo",
+      "name": "Chikoo",
+      "category_id": "cat-seasonal",
+      "category_name": "Fruit-Based / Seasonal",
+      "category_slug": "fruit-seasonal",
+      "description": "Naturally malty, caramel-sweet sapota (Chikoo) fruit blended into rich cream for a comforting, authentic fruit scoop.",
+      "image_url": "/menu/chikoo.webp?v=4",
+      "cutout_url": "/menu/chikoo.webp?v=4",
+      "price": 80,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 80,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 148,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 336,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Ripe Chikoo (Sapota) Pulp",
+        "Cane Sugar"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": true,
+      "recommended_slugs": [
+        "fresh-sitaphal",
+        "caramel-nuts",
+        "malai-kulfi"
+      ],
+      "exploded_spec": {
+        "vesselType": "wooden-bowl",
+        "vesselColor": "#8D5524",
+        "primaryScoopColor": "#B27A4E",
+        "secondaryScoopColor": "#C8956B",
+        "sauceColor": "#7E4E28",
+        "toppingType": "caramel-praline",
+        "toppingColor": "#9E673B",
+        "ambientGlow": "#EED0B4",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Handcrafted Wooden Bowl",
+            "detail": "Natural wood serving bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Fresh Sapota Cream Scoop",
+            "detail": "Real ripe chikoo fruit & cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Malty Caramel-Chikoo Swirl",
+            "detail": "Rich orchard fruit reduction",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Diced Ripe Chikoo Pieces",
+            "detail": "Authentic fruit texture",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-gulab-jamoon",
+      "slug": "gulab-jamoon",
+      "name": "Gulab Jamoon",
+      "category_id": "cat-dessert",
+      "category_name": "Dessert-Inspired Flavours",
+      "category_slug": "dessert-inspired",
+      "description": "Warm cardamom-rose khoya gulab jamoons nestled over creamy vanilla-malai ice cream with golden syrup and pistachio slivers.",
+      "image_url": "/menu/gulab-jamoon.webp?v=4",
+      "cutout_url": "/menu/gulab-jamoon.webp?v=4",
+      "price": 80,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 80,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 148,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 336,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Khoya Gulab Jamoon",
+        "Cardamom-Rose Syrup",
+        "Pistachios"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Tree Nuts (Pistachio)"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "malai-kulfi",
+        "badam-milk-with-ice-cream",
+        "brownie-with-ice-cream-sizzler"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#E0E6ED",
+        "primaryScoopColor": "#FBF0D9",
+        "secondaryScoopColor": "#B95F34",
+        "sauceColor": "#C86D25",
+        "toppingType": "pistachio-crumb",
+        "toppingColor": "#8BC34A",
+        "ambientGlow": "#FAD7B0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Crystal Dessert Jar",
+            "detail": "Fluted glass presentation",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Royal Malai-Vanilla Ice Cream",
+            "detail": "Chilled velvety dairy cushion",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Rose & Cardamom Chashni",
+            "detail": "Fragrant golden sugar reduction",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Soft Khoya Gulab Jamoons & Pista",
+            "detail": "Golden caramelized jamoons",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-strawberry-cheese-cake",
+      "slug": "strawberry-cheese-cake",
+      "name": "Strawberry Cheese Cake",
+      "category_id": "cat-dessert",
+      "category_name": "Dessert-Inspired Flavours",
+      "category_slug": "dessert-inspired",
+      "description": "Velvety cream-cheese ice cream layered with sweet strawberry compote and buttery graham biscuit crumble.",
+      "image_url": "/menu/strawberry-cheese-cake.webp?v=4",
+      "cutout_url": "/menu/strawberry-cheese-cake.webp?v=4",
+      "price": 80,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 80,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 148,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 336,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Cream Cheese",
+        "Fresh Cream",
+        "Strawberry Compote",
+        "Butter Biscuit Crumble"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "red-velvet",
+        "mixed-berries",
+        "forest-fruit-sundae"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#E0E6ED",
+        "primaryScoopColor": "#FADCE4",
+        "secondaryScoopColor": "#EB6987",
+        "sauceColor": "#C2185B",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#D4A373",
+        "ambientGlow": "#FFC8D8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Crystal Dessert Jar",
+            "detail": "Fluted glass presentation",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Mascarpone & Cream Cheese Scoop",
+            "detail": "Tangy-sweet cheesecake ice cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Ruby Strawberry Coulis",
+            "detail": "Slow-simmered berry glaze",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Golden Biscuit Crust Crumble",
+            "detail": "Buttery digestive streusel",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-coffee-brownie-ice-cream",
+      "slug": "coffee-brownie-ice-cream",
+      "name": "Coffee Brownie Ice Cream",
+      "category_id": "cat-dessert",
+      "category_name": "Dessert-Inspired Flavours",
+      "category_slug": "dessert-inspired",
+      "description": "Roasted Arabica espresso ice cream folded with fudgy dark chocolate brownie chunks and mocha fudge swirls.",
+      "image_url": "/menu/coffee-brownie-ice-cream.webp?v=4",
+      "cutout_url": "/menu/coffee-brownie-ice-cream.webp?v=4",
+      "price": 60,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 60,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 111,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 252,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Roasted Coffee Extract",
+        "Chocolate Brownie Chunks",
+        "Mocha Fudge"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "brownie-with-ice-cream-sizzler",
+        "cold-coffee-shake",
+        "choco-brownie-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#E0E6ED",
+        "primaryScoopColor": "#9E6B47",
+        "secondaryScoopColor": "#633B22",
+        "sauceColor": "#3B2014",
+        "toppingType": "choco-chips",
+        "toppingColor": "#4A2A18",
+        "ambientGlow": "#DFBE9F",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Crystal Dessert Jar",
+            "detail": "Fluted glass vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Roasted Espresso Cream Scoop",
+            "detail": "Aromatic coffee-infused dairy",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Dark Mocha Ganache",
+            "detail": "Espresso-chocolate fudge ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Fudgy Chocolate Brownie Cubes",
+            "detail": "Baked cocoa brownie chunks",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-red-velvet",
+      "slug": "red-velvet",
+      "name": "Red Velvet",
+      "category_id": "cat-dessert",
+      "category_name": "Dessert-Inspired Flavours",
+      "category_slug": "dessert-inspired",
+      "description": "Crimson cocoa red-velvet ice cream swirled with silky cream-cheese frosting ribbons and tender red velvet sponge crumbs.",
+      "image_url": "/menu/red-velvet.webp?v=4",
+      "cutout_url": "/menu/red-velvet.webp?v=4",
+      "price": 55,
+      "variants": [
+        {
+          "id": "single-scoop",
+          "name": "Regular Scoop",
+          "price": 55,
+          "servingSize": "1 Scoop (90 ml)",
+          "available": true
+        },
+        {
+          "id": "double-scoop",
+          "name": "Double Scoop",
+          "price": 102,
+          "servingSize": "2 Scoops (180 ml)",
+          "available": true
+        },
+        {
+          "id": "family-tub",
+          "name": "Party Pack (500 ml)",
+          "price": 231,
+          "servingSize": "500 ml Tub",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Red Velvet Sponge Cake",
+        "Cream Cheese Swirl",
+        "Cocoa"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "strawberry-cheese-cake",
+        "american-beauty-sundae",
+        "candy-fantasy"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#E0E6ED",
+        "primaryScoopColor": "#C62A44",
+        "secondaryScoopColor": "#FFF5EA",
+        "sauceColor": "#8E162B",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#B71C1C",
+        "ambientGlow": "#F8B4C0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Crystal Dessert Jar",
+            "detail": "Fluted glass presentation",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Crimson Red Velvet Scoop",
+            "detail": "Delicate cocoa-vanilla cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Cream Cheese Frosting Swirl",
+            "detail": "Whipped white frosting ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Red Velvet Cake Crumb",
+            "detail": "Soft patisserie sponge pieces",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-fruit-salad-with-ice-cream",
+      "slug": "fruit-salad-with-ice-cream",
+      "name": "Fruit Salad with Ice Cream",
+      "category_id": "cat-specials",
+      "category_name": "Specials & Signature Items",
+      "category_slug": "specials-signature",
+      "description": "A NICE ICE CREAMS signature since 1986—freshly cut seasonal fruits, berries, and citrus segments crowned with creamy vanilla ice cream and pistachio slivers.",
+      "image_url": "/menu/fruit-salad-with-ice-cream.webp?v=4",
+      "cutout_url": "/menu/fruit-salad-with-ice-cream.webp?v=4",
+      "price": 90,
+      "variants": [
+        {
+          "id": "regular-90",
+          "name": "Regular Bowl",
+          "price": 90,
+          "servingSize": "Regular (Menu ₹90)",
+          "available": true
+        },
+        {
+          "id": "special-100",
+          "name": "Special Large Coupe",
+          "price": 100,
+          "servingSize": "Special Large (Menu ₹100)",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Fresh Seasonal Fruits",
+        "Pure Milk Vanilla Ice Cream",
+        "Pomegranate",
+        "Papaya",
+        "Apple",
+        "Banana",
+        "Pistachio Slivers"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Pistachio)"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "badam-milk-with-ice-cream",
+        "forest-fruit-sundae",
+        "cassata"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#FFF5DC",
+        "secondaryScoopColor": "#FF8A65",
+        "sauceColor": "#F06292",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#FFB300",
+        "ambientGlow": "#FFE0E8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Pedestal Glass Coupe",
+            "detail": "Signature stemmed dessert goblet",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Fresh Cut Orchard Medley",
+            "detail": "Apple, mango, citrus, berries & melon",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Pure Milk Vanilla Scoop",
+            "detail": "Chilled velvety custard-vanilla crown",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Roasted Pista & Berry Splash",
+            "detail": "Crunchy green pistachio slivers",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-badam-milk-with-ice-cream",
+      "slug": "badam-milk-with-ice-cream",
+      "name": "Badam Milk with Ice Cream",
+      "category_id": "cat-specials",
+      "category_name": "Specials & Signature Items",
+      "category_slug": "specials-signature",
+      "description": "Chilled saffron-cardamom almond milk slow-simmered with stone-ground badam paste and topped with a generous scoop of creamy ice cream.",
+      "image_url": "/menu/badam-milk-with-ice-cream.webp?v=4",
+      "cutout_url": "/menu/badam-milk-with-ice-cream.webp?v=4",
+      "price": 90,
+      "variants": [
+        {
+          "id": "regular-90",
+          "name": "Regular Glass",
+          "price": 90,
+          "servingSize": "Regular (Menu ₹90)",
+          "available": true
+        },
+        {
+          "id": "special-100",
+          "name": "Special Extra Scoop",
+          "price": 100,
+          "servingSize": "Special Large (Menu ₹100)",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Stone-Ground Almonds (Badam)",
+        "Saffron Strands",
+        "Cardamom",
+        "Vanilla / Malai Ice Cream"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond, Pistachio)"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "fruit-salad-with-ice-cream",
+        "malai-kulfi",
+        "gulab-jamoon"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E8DEC8",
+        "primaryScoopColor": "#F6DB94",
+        "secondaryScoopColor": "#FFF3D1",
+        "sauceColor": "#E6A100",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#C89B54",
+        "ambientGlow": "#FFF0BA",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Heritage Goblet",
+            "detail": "Frosty badam milk glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Kesar Badam Milk",
+            "detail": "Slow-simmered almond & saffron milk",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Floating Cream Scoop",
+            "detail": "Rich pure-milk ice cream float",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Slivered Almonds & Saffron",
+            "detail": "Crunchy badam & pista garnish",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-cassata",
+      "slug": "cassata",
+      "name": "Cassata",
+      "category_id": "cat-specials",
+      "category_name": "Specials & Signature Items",
+      "category_slug": "specials-signature",
+      "description": "Classic tri-layered Neapolitan-style cassata slice combining strawberry, pistachio, and vanilla ice cream over sponge cake with roasted nuts.",
+      "image_url": "/menu/cassata.webp?v=4",
+      "cutout_url": "/menu/cassata.webp?v=4",
+      "price": 120,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Signature Cassata Slice",
+          "price": 120,
+          "servingSize": "1 Deluxe Slice",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Fresh Cream",
+        "Vanilla, Strawberry & Pista Layers",
+        "Sponge Base",
+        "Roasted Cashews & Tutty Fruity"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Tree Nuts (Cashew, Pistachio)"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "fruit-salad-with-ice-cream",
+        "american-beauty-sundae",
+        "pista-nuts"
+      ],
+      "exploded_spec": {
+        "vesselType": "sundae-boat",
+        "vesselColor": "#E8EAF0",
+        "primaryScoopColor": "#F5B8C4",
+        "secondaryScoopColor": "#A8D88E",
+        "sauceColor": "#F7DC8A",
+        "toppingType": "pistachio-crumb",
+        "toppingColor": "#D99B52",
+        "ambientGlow": "#FFE2EB",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Platter & Sponge Base",
+            "detail": "Delicate vanilla sponge foundation",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Tri-Colour Ice Cream Arcs",
+            "detail": "Strawberry, Pista & Vanilla layers",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Sweet Cream & Fruit Glaze",
+            "detail": "Classic layered patisserie finish",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Roasted Cashews & Pista Crown",
+            "detail": "Crunchy nut coating",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-cold-cocoa-with-ice-cream",
+      "slug": "cold-cocoa-with-ice-cream",
+      "name": "Cold Cocoa with Ice Cream",
+      "category_id": "cat-specials",
+      "category_name": "Specials & Signature Items",
+      "category_slug": "specials-signature",
+      "description": "Silky, dense chilled Dutch cocoa drink poured over ice and crowned with a rich scoop of vanilla or chocolate ice cream and choco chips.",
+      "image_url": "/menu/cold-cocoa-with-ice-cream.webp?v=4",
+      "cutout_url": "/menu/cold-cocoa-with-ice-cream.webp?v=4",
+      "price": 120,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Glass with Scoop",
+          "price": 120,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Dark Dutch Cocoa",
+        "Fresh Cream",
+        "Vanilla / Chocolate Ice Cream",
+        "Choco Chips"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "belgium-chocolate",
+        "death-by-chocolate",
+        "chocolate-blast-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#764C34",
+        "secondaryScoopColor": "#FDF5DF",
+        "sauceColor": "#3B2014",
+        "toppingType": "choco-chips",
+        "toppingColor": "#4E2A1A",
+        "ambientGlow": "#DFBE9F",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Chilled Tall Glass",
+            "detail": "Frosted glass tumbler",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Velvet Cold Cocoa",
+            "detail": "Dense, silky chilled cocoa elixir",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Floating Ice Cream Scoop",
+            "detail": "Pure cream scoop float",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Chocolate Shavings & Chips",
+            "detail": "Dark cocoa crunch topping",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-caramel-carnival",
+      "slug": "caramel-carnival",
+      "name": "Caramel Carnival",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Thick, carnival-worthy caramel & butterscotch ice cream shake drizzled with golden toffee ribbons and crunchy praline.",
+      "image_url": "/menu/caramel-carnival.webp?v=4",
+      "cutout_url": "/menu/caramel-carnival.webp?v=4",
+      "price": 159,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 159,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Caramel & Butterscotch Ice Cream",
+        "Golden Caramel Sauce",
+        "Butterscotch Crunch"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Cashew)"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "caramel-nuts",
+        "butterscotch",
+        "nuts-heaven-sundae"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#EBB673",
+        "secondaryScoopColor": "#FFF5DF",
+        "sauceColor": "#B86514",
+        "toppingType": "caramel-praline",
+        "toppingColor": "#D9822B",
+        "ambientGlow": "#FFE2B0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall glass with striped straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Thick Caramel Ice Cream Blend",
+            "detail": "Spun with double scoops of caramel",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Warm Toffee Drizzle",
+            "detail": "Glass-lined golden caramel",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Whipped Cream & Praline",
+            "detail": "Crunchy butterscotch pearls",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-cold-coffee-shake",
+      "slug": "cold-coffee-shake",
+      "name": "Cold Coffee Shake",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Bold roasted espresso blended with creamy vanilla ice cream, frothy chilled milk, and dark chocolate drizzle.",
+      "image_url": "/menu/cold-coffee-shake.webp?v=4",
+      "cutout_url": "/menu/cold-coffee-shake.webp?v=4",
+      "price": 149,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 149,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Vanilla Ice Cream",
+        "Roasted Arabica Coffee",
+        "Chocolate Fudge Drizzle"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "coffee-brownie-ice-cream",
+        "brownie-with-ice-cream-sizzler",
+        "choco-brownie-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#A8805F",
+        "secondaryScoopColor": "#F5EAD8",
+        "sauceColor": "#3B2014",
+        "toppingType": "choco-chips",
+        "toppingColor": "#4E2A1A",
+        "ambientGlow": "#E5C6AC",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall café glass with straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Frappé Espresso & Ice Cream",
+            "detail": "High-speed whipped coffee cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Mocha Fudge Swirl",
+            "detail": "Dark chocolate glass lining",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Velvet Crema & Cocoa Dust",
+            "detail": "Aromatic espresso finish",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-candy-fantasy",
+      "slug": "candy-fantasy",
+      "name": "Candy Fantasy",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Playful strawberry & bubblegum-vanilla shake swirled with berry syrup and rainbow confectionery sprinkles.",
+      "image_url": "/menu/candy-fantasy.webp?v=4",
+      "cutout_url": "/menu/candy-fantasy.webp?v=4",
+      "price": 149,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 149,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Strawberry & Vanilla Ice Cream",
+        "Berry Syrup",
+        "Confectionery Sprinkles"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "strawberry",
+        "fruit-ninja",
+        "red-velvet"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#F294BC",
+        "secondaryScoopColor": "#FFF0F6",
+        "sauceColor": "#D81B60",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#FF4081",
+        "ambientGlow": "#FFCCE4",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall glass with striped straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Pink Berry-Vanilla Blend",
+            "detail": "Creamy sweet berry shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Strawberry Candy Swirl",
+            "detail": "Bright crimson syrup ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Cream Crown & Rainbow Sprinkles",
+            "detail": "Festive crunch",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-kitkat-shake",
+      "slug": "kitkat-shake",
+      "name": "KitKat",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Crunchy chocolate-coated KitKat wafer fingers blended with chocolate & vanilla ice cream and topped with wafer crunch.",
+      "image_url": "/menu/kitkat-shake.webp?v=4",
+      "cutout_url": "/menu/kitkat-shake.webp?v=4",
+      "price": 159,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 159,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Chocolate & Vanilla Ice Cream",
+        "KitKat Chocolate Wafers",
+        "Chocolate Sauce"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "oreo-shake",
+        "choco-crunch",
+        "ferrero-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#9E6C4E",
+        "secondaryScoopColor": "#F3E5D8",
+        "sauceColor": "#3B2014",
+        "toppingType": "choco-chips",
+        "toppingColor": "#5D3A24",
+        "ambientGlow": "#E2C0A8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall glass with striped straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Blended Wafer & Ice Cream",
+            "detail": "Rich malted chocolate shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Hot Fudge Swirl",
+            "detail": "Glossy chocolate sauce",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Crisp KitKat Wafer Bars",
+            "detail": "Crunchy chocolate wafer fingers",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-nutella-brownie-shake",
+      "slug": "nutella-brownie-shake",
+      "name": "Nutella Brownie",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Roasted hazelnut-cocoa Nutella and fudgy chocolate brownie chunks spun with premium ice cream into pure indulgence.",
+      "image_url": "/menu/nutella-brownie-shake.webp?v=4",
+      "cutout_url": "/menu/nutella-brownie-shake.webp?v=4",
+      "price": 169,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 169,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Chocolate & Vanilla Ice Cream",
+        "Nutella Hazelnut Cocoa Spread",
+        "Fudge Brownie"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Hazelnut)",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "ferrero-shake",
+        "brownie-with-ice-cream-sizzler",
+        "death-by-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#7D5238",
+        "secondaryScoopColor": "#5C3620",
+        "sauceColor": "#2E170C",
+        "toppingType": "choco-chips",
+        "toppingColor": "#3D2212",
+        "ambientGlow": "#D7B296",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Nutella-rimmed tall glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Nutella & Ice Cream Blend",
+            "detail": "Velvety hazelnut-chocolate shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Warm Hazelnut Ganache",
+            "detail": "Rich Nutella swirl",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Baked Fudge Brownie Crumble",
+            "detail": "Dense chocolate brownie cubes",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-snickers-shake",
+      "slug": "snickers-shake",
+      "name": "Snickers",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Loaded with roasted peanuts, chewy nougat, golden caramel, and milk chocolate blended with thick ice cream.",
+      "image_url": "/menu/snickers-shake.webp?v=4",
+      "cutout_url": "/menu/snickers-shake.webp?v=4",
+      "price": 179,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 179,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Chocolate & Caramel Ice Cream",
+        "Snickers Bar",
+        "Roasted Peanuts",
+        "Caramel Sauce"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Peanuts",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "peanut-butter-shake",
+        "caramel-nuts",
+        "nuts-heaven-sundae"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#AF8052",
+        "secondaryScoopColor": "#E8C396",
+        "sauceColor": "#8C4A08",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#C68B59",
+        "ambientGlow": "#F5D2A8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Caramel-lined tall glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Peanut-Caramel Ice Cream Blend",
+            "detail": "Spun with real Snickers bars",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Salted Caramel & Fudge",
+            "detail": "Dual chocolate-caramel ribbons",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Snickers Chunks & Roasted Peanuts",
+            "detail": "Chewy nougat & nut crunch",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-ferrero-shake",
+      "slug": "ferrero-shake",
+      "name": "Ferrero",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Our crown-jewel shake crafted with roasted hazelnut praline, crisp wafer shells, and Belgian chocolate ice cream.",
+      "image_url": "/menu/ferrero-shake.webp?v=4",
+      "cutout_url": "/menu/ferrero-shake.webp?v=4",
+      "price": 189,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 189,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Belgium Chocolate Ice Cream",
+        "Ferrero Rocher Pralines",
+        "Roasted Hazelnuts",
+        "Chocolate Ganache"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Hazelnut)",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "belgium-chocolate-shake",
+        "nutella-brownie-shake",
+        "nutty-death-by-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#8A5E3E",
+        "secondaryScoopColor": "#D4A359",
+        "sauceColor": "#3B2014",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#D4AF37",
+        "ambientGlow": "#F3D59B",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Gold-standard signature shake glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Hazelnut Praline & Cocoa Blend",
+            "detail": "Belgian chocolate & hazelnut cream",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Gianduja Chocolate Swirl",
+            "detail": "Silky hazelnut-cocoa ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Crushed Wafer & Roasted Hazelnuts",
+            "detail": "Crunchy praline crown",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-oreo-shake",
+      "slug": "oreo-shake",
+      "name": "Oreo Shake",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Crushed Oreo cookies spun with double scoops of vanilla and cookies-and-cream ice cream, finished with dark chocolate drizzle.",
+      "image_url": "/menu/oreo-shake.webp?v=4",
+      "cutout_url": "/menu/oreo-shake.webp?v=4",
+      "price": 169,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 169,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Cookies & Cream Ice Cream",
+        "Oreo Chocolate Sandwich Cookies",
+        "Chocolate Sauce"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "cookies-and-cream",
+        "kitkat-shake",
+        "death-by-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#DCD8D4",
+        "secondaryScoopColor": "#2C221E",
+        "sauceColor": "#241612",
+        "toppingType": "oreo-cookie",
+        "toppingColor": "#2C221E",
+        "ambientGlow": "#ECEFF4",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall glass with red-and-white straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Cookies & Cream Ice Cream Blend",
+            "detail": "Thick vanilla & cookie shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Dark Chocolate Fudge Swirl",
+            "detail": "Rich cocoa glass drizzle",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Crushed Oreo Cookie Crown",
+            "detail": "Chunky cocoa sandwich biscuits",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-honey-ball-shake",
+      "slug": "honey-ball-shake",
+      "name": "Honey Ball",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Golden wildflower honey, sweet cake pearls, and creamy vanilla-butterscotch ice cream blended into a luscious shake.",
+      "image_url": "/menu/honey-ball-shake.webp?v=4",
+      "cutout_url": "/menu/honey-ball-shake.webp?v=4",
+      "price": 169,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 169,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Vanilla & Butterscotch Ice Cream",
+        "Pure Honey",
+        "Sweet Honey Cake Pearls"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "caramel-banana-shake",
+        "gulab-jamoon",
+        "arabian-delight"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#F5C36C",
+        "secondaryScoopColor": "#FFF4D8",
+        "sauceColor": "#D48806",
+        "toppingType": "caramel-praline",
+        "toppingColor": "#E09A24",
+        "ambientGlow": "#FFE8B2",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Honey-rimmed tall glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Honeyed Vanilla Cream Blend",
+            "detail": "Silky golden dairy shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Wildflower Honey Drizzle",
+            "detail": "Pure amber honey swirl",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Golden Honey Cake Pearls",
+            "detail": "Soft honey-soaked bites",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-caramel-banana-shake",
+      "slug": "caramel-banana-shake",
+      "name": "Caramel Banana",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Ripe sweet bananas and vanilla ice cream blended with warm butter-caramel ribbons and roasted nut crunch.",
+      "image_url": "/menu/caramel-banana-shake.webp?v=4",
+      "cutout_url": "/menu/caramel-banana-shake.webp?v=4",
+      "price": 159,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 159,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Vanilla Ice Cream",
+        "Fresh Ripe Banana",
+        "Caramel Sauce",
+        "Roasted Cashews"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Cashew)"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "caramel-carnival",
+        "fruit-salad-with-ice-cream",
+        "butterscotch"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#F8DE94",
+        "secondaryScoopColor": "#FFF9E6",
+        "sauceColor": "#C87A19",
+        "toppingType": "caramel-praline",
+        "toppingColor": "#D9822B",
+        "ambientGlow": "#FFF0BA",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall glass with striped straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Banana & Vanilla Ice Cream Blend",
+            "detail": "Naturally creamy banoffee texture",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Butter-Caramel Swirl",
+            "detail": "Golden banoffee caramel glaze",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Caramelised Nut Crunch",
+            "detail": "Toasted cashew & praline bits",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-mango-shake",
+      "slug": "mango-shake",
+      "name": "Mango",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Thick Alphonso mango pulp spun with our Natural Mango ice cream and pure chilled milk for a sunshine-gold shake.",
+      "image_url": "/menu/mango-shake.webp?v=4",
+      "cutout_url": "/menu/mango-shake.webp?v=4",
+      "price": 169,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 169,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Natural Mango Ice Cream",
+        "Alphonso Mango Pulp",
+        "Pistachio Slivers"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Pistachio)"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": true,
+      "recommended_slugs": [
+        "natural-mango",
+        "fruit-salad-with-ice-cream",
+        "forest-fruit-sundae"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#FCC044",
+        "secondaryScoopColor": "#FFE28A",
+        "sauceColor": "#E68A00",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#FFA000",
+        "ambientGlow": "#FFE89E",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall glass with striped straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Double Mango Ice Cream Blend",
+            "detail": "Spun with Natural Mango scoops",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Alphonso Nectar Swirl",
+            "detail": "Pure golden mango reduction",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Mango Scoop & Pista Slivers",
+            "detail": "Rich tropical crown",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-belgium-chocolate-shake",
+      "slug": "belgium-chocolate-shake",
+      "name": "Belgium Chocolate",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Intense Belgian dark chocolate ice cream blended into a velvety, ganache-rich shake for true chocolate connoisseurs.",
+      "image_url": "/menu/belgium-chocolate-shake.webp?v=4",
+      "cutout_url": "/menu/belgium-chocolate-shake.webp?v=4",
+      "price": 189,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 189,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Belgium Chocolate Ice Cream",
+        "Belgian Dark Ganache",
+        "Dark Chocolate Curls"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "belgium-chocolate",
+        "death-by-chocolate",
+        "ferrero-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#623E2A",
+        "secondaryScoopColor": "#482B1C",
+        "sauceColor": "#24120B",
+        "toppingType": "choco-chips",
+        "toppingColor": "#381E14",
+        "ambientGlow": "#C8A690",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Ganache-lined tall glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Belgian Couverture Ice Cream Blend",
+            "detail": "Deep dark chocolate shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Dark Truffle Fudge Swirl",
+            "detail": "70% cocoa ganache ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Belgian Chocolate Shavings",
+            "detail": "Crisp dark cocoa curls",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-peanut-butter-shake",
+      "slug": "peanut-butter-shake",
+      "name": "Peanut Butter",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Creamy roasted peanut butter spun with vanilla and chocolate ice cream, drizzled with salted caramel and chocolate fudge.",
+      "image_url": "/menu/peanut-butter-shake.webp?v=4",
+      "cutout_url": "/menu/peanut-butter-shake.webp?v=4",
+      "price": 189,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 189,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Vanilla & Chocolate Ice Cream",
+        "Roasted Peanut Butter",
+        "Chocolate Fudge",
+        "Crushed Peanuts"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Peanuts",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "snickers-shake",
+        "caramel-nuts",
+        "nutty-death-by-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#D4A26C",
+        "secondaryScoopColor": "#F2D5B0",
+        "sauceColor": "#7A4419",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#B87D42",
+        "ambientGlow": "#F5D6B0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Peanut-butter rimmed glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Roasted Peanut Butter & Cream",
+            "detail": "High-protein velvety nut shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Chocolate-Peanut Swirl",
+            "detail": "Savoury-sweet cocoa ribbon",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Crushed Roasted Peanuts",
+            "detail": "Golden nut crunch",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-choco-brownie-shake",
+      "slug": "choco-brownie-shake",
+      "name": "Choco Brownie",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "Warm-baked chocolate walnut brownie chunks blended with rich chocolate ice cream and hot fudge sauce.",
+      "image_url": "/menu/choco-brownie-shake.webp?v=4",
+      "cutout_url": "/menu/choco-brownie-shake.webp?v=4",
+      "price": 179,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 179,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Chocolate Ice Cream",
+        "Chocolate Fudge Brownie",
+        "Hot Fudge Sauce",
+        "Choco Chips"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "brownie-with-ice-cream-sizzler",
+        "death-by-chocolate",
+        "nutella-brownie-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#734A30",
+        "secondaryScoopColor": "#54321E",
+        "sauceColor": "#2C160C",
+        "toppingType": "choco-chips",
+        "toppingColor": "#3D2212",
+        "ambientGlow": "#D4B098",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Fudge-lined tall glass",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Chocolate & Brownie Ice Cream Blend",
+            "detail": "Thick brownie-studded shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Signature Hot Fudge",
+            "detail": "Rich dark cocoa sauce",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Brownie Cubes & Choco Chips",
+            "detail": "Decadent bakery crown",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-chocolate-blast-shake",
+      "slug": "chocolate-blast-shake",
+      "name": "Chocolate Blast",
+      "category_id": "cat-shakes",
+      "category_name": "Premium Ice Cream Shakes",
+      "category_slug": "premium-shakes",
+      "description": "An explosive triple-chocolate shake combining chocolate ice cream, choco chips, cocoa crunch, and double fudge drizzle.",
+      "image_url": "/menu/chocolate-blast-shake.webp?v=4",
+      "cutout_url": "/menu/chocolate-blast-shake.webp?v=4",
+      "price": 169,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Tall Shake (350 ml)",
+          "price": 169,
+          "servingSize": "350 ml",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Pure Milk",
+        "Chocolate & Choco Chips Ice Cream",
+        "Chocolate Fudge",
+        "Choco Crunch",
+        "Chocolate Flakes"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": false,
+      "seasonal": false,
+      "recommended_slugs": [
+        "death-by-chocolate",
+        "belgium-chocolate-shake",
+        "choco-crunch"
+      ],
+      "exploded_spec": {
+        "vesselType": "tall-glass",
+        "vesselColor": "#E2ECF5",
+        "primaryScoopColor": "#69442D",
+        "secondaryScoopColor": "#4D2F1E",
+        "sauceColor": "#26130A",
+        "toppingType": "choco-chips",
+        "toppingColor": "#3B2014",
+        "ambientGlow": "#CFA98E",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Frosted Milkshake Glass",
+            "detail": "Tall glass with striped straw",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Triple Chocolate Ice Cream Blend",
+            "detail": "Double-scoop cocoa shake",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Choco Dip & Fudge Swirl",
+            "detail": "Layered chocolate sauce",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Choco Chips & Cocoa Flakes",
+            "detail": "Crunchy chocolate blast topping",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-american-beauty-sundae",
+      "slug": "american-beauty-sundae",
+      "name": "American Beauty Sundae",
+      "category_id": "cat-sundaes",
+      "category_name": "Ice Cream Sundaes",
+      "category_slug": "ice-cream-sundaes",
+      "description": "Creamy scoop of Vanilla & a rich scoop of Chocolate smothered in a warm chocolate fudge sauce, sprinkled with chocolate flakes & toasted roasted almonds.",
+      "image_url": "/menu/american-beauty-sundae.webp?v=4",
+      "cutout_url": "/menu/american-beauty-sundae.webp?v=4",
+      "price": 99,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Classic Sundae Goblet",
+          "price": 99,
+          "servingSize": "2 Scoops + Toppings",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Vanilla Ice Cream",
+        "Chocolate Ice Cream",
+        "Warm Chocolate Fudge Sauce",
+        "Chocolate Flakes",
+        "Toasted Roasted Almonds",
+        "Maraschino Cherry"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond)",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "death-by-chocolate",
+        "nuts-heaven-sundae",
+        "brownie-with-ice-cream-sizzler"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#D8E2EC",
+        "primaryScoopColor": "#FDF5DF",
+        "secondaryScoopColor": "#6B422B",
+        "sauceColor": "#3B2014",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#D4A373",
+        "ambientGlow": "#D2E0FF",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Fluted Sundae Parfait Glass",
+            "detail": "Classic tall sundae goblet",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Rich Chocolate & Creamy Vanilla Duo",
+            "detail": "Two complementary signature scoops",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Warm Chocolate Fudge Sauce",
+            "detail": "Glossy poured cocoa fudge",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Toasted Almonds, Choco Flakes & Cherry",
+            "detail": "Crunchy roasted almonds & crown cherry",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-brownie-with-ice-cream-sizzler",
+      "slug": "brownie-with-ice-cream-sizzler",
+      "name": "Brownie with Ice Cream Sizzler",
+      "category_id": "cat-sundaes",
+      "category_name": "Ice Cream Sundaes",
+      "category_slug": "ice-cream-sundaes",
+      "description": "A scoop of creamy Vanilla ice cream placed on a warm brownie topped with choco chips, choco flakes & hot fudge sauce all served in a hot sizzling pan.",
+      "image_url": "/menu/brownie-with-ice-cream-sizzler.webp?v=4",
+      "cutout_url": "/menu/brownie-with-ice-cream-sizzler.webp?v=4",
+      "price": 120,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Hot Sizzling Platter",
+          "price": 120,
+          "servingSize": "1 Brownie + Scoop + Hot Fudge",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Warm Chocolate Brownie",
+        "Creamy Vanilla Ice Cream",
+        "Choco Chips",
+        "Choco Flakes",
+        "Hot Fudge Sauce"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "death-by-chocolate",
+        "nutty-death-by-chocolate",
+        "coffee-brownie-ice-cream"
+      ],
+      "exploded_spec": {
+        "vesselType": "sizzler-pan",
+        "vesselColor": "#1F2024",
+        "primaryScoopColor": "#FDF5DF",
+        "secondaryScoopColor": "#3D2317",
+        "sauceColor": "#26130A",
+        "toppingType": "choco-chips",
+        "toppingColor": "#4E2A1A",
+        "ambientGlow": "#F8CDE0",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Cast-Iron Hot Sizzling Skillet",
+            "detail": "Theatrical table-side sizzler pan",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Warm Baked Fudge Brownie & Vanilla Scoop",
+            "detail": "Hot-and-cold temperature contrast",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Bubbling Hot Fudge Cascade",
+            "detail": "Sizzling molten chocolate sauce",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Choco Chips & Choco Flakes",
+            "detail": "Melting chocolate shards",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-forest-fruit-sundae",
+      "slug": "forest-fruit-sundae",
+      "name": "Forest Fruit Sundae",
+      "category_id": "cat-sundaes",
+      "category_name": "Ice Cream Sundaes",
+      "category_slug": "ice-cream-sundaes",
+      "description": "Fruit Ninja, Mixed Berries & Natural Mango topped with a colorful medley of mixed fruit, sweet strawberries crush & hint of citrusy orange crush.",
+      "image_url": "/menu/forest-fruit-sundae.webp?v=4",
+      "cutout_url": "/menu/forest-fruit-sundae.webp?v=4",
+      "price": 129,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Triple-Scoop Sundae Boat",
+          "price": 129,
+          "servingSize": "3 Scoops + Fruit Medley",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Fruit Ninja Ice Cream",
+        "Mixed Berries Ice Cream",
+        "Natural Mango Ice Cream",
+        "Mixed Fruit Medley",
+        "Strawberry Crush",
+        "Citrusy Orange Crush",
+        "Cherries"
+      ],
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "fruit-salad-with-ice-cream",
+        "mixed-berries",
+        "natural-mango"
+      ],
+      "exploded_spec": {
+        "vesselType": "sundae-boat",
+        "vesselColor": "#DCE4F2",
+        "primaryScoopColor": "#E06391",
+        "secondaryScoopColor": "#FCBC34",
+        "sauceColor": "#D81B60",
+        "toppingType": "berries-fruit",
+        "toppingColor": "#FF5252",
+        "ambientGlow": "#DCD2FF",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Crystal Sundae Boat Dish",
+            "detail": "Wide glass presentation platter",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Fruit Ninja, Mixed Berries & Mango Trio",
+            "detail": "Three vibrant fruit scoops",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Sweet Strawberry & Citrus Orange Crush",
+            "detail": "Dual fruit coulis ribbons",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Fresh Fruit Medley & Twin Cherries",
+            "detail": "Colorful orchard fruit crown",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-nuts-heaven-sundae",
+      "slug": "nuts-heaven-sundae",
+      "name": "Nuts Heaven Sundae",
+      "category_id": "cat-sundaes",
+      "category_name": "Ice Cream Sundaes",
+      "category_slug": "ice-cream-sundaes",
+      "description": "Indulge in a trio of Roasted Almond, Butterscotch & American Nuts topped with a drizzle of rich caramel sauce, crunchy chocolate flakes, roasted almonds & cashew nuts.",
+      "image_url": "/menu/nuts-heaven-sundae.webp?v=4",
+      "cutout_url": "/menu/nuts-heaven-sundae.webp?v=4",
+      "price": 139,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Triple-Scoop Nut Sundae",
+          "price": 139,
+          "servingSize": "3 Scoops + Roasted Nuts",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Roasted Almond Ice Cream",
+        "Butterscotch Ice Cream",
+        "American Nuts Ice Cream",
+        "Rich Caramel Sauce",
+        "Chocolate Flakes",
+        "Roasted Almonds",
+        "Cashew Nuts",
+        "Wafer Roll"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond, Cashew)",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "nutty-death-by-chocolate",
+        "american-nuts",
+        "caramel-nuts"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#F5F0EB",
+        "primaryScoopColor": "#E8AE68",
+        "secondaryScoopColor": "#F6BE58",
+        "sauceColor": "#9E5208",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#C88A4B",
+        "ambientGlow": "#F8CEEC",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Porcelain Sundae Bowl",
+            "detail": "Contoured white dessert bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Roasted Almond, Butterscotch & American Nuts Trio",
+            "detail": "Three nutty signature scoops",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Rich Golden Caramel Drizzle",
+            "detail": "Warm butter-caramel ribbons",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Roasted Almonds, Cashews, Choco Flakes & Wafer",
+            "detail": "Crunchy nut heaven crown",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-death-by-chocolate",
+      "slug": "death-by-chocolate",
+      "name": "Death by Chocolate",
+      "category_id": "cat-sundaes",
+      "category_name": "Ice Cream Sundaes",
+      "category_slug": "ice-cream-sundaes",
+      "description": "Indulge in a rich duo of creamy ice creams, chocolate chips & Belgium Chocolate topped with brownie pieces, chocolate chunks and a double dose of chocolatey goodness with our signature chocolate fudge & choco dip sauce.",
+      "image_url": "/menu/death-by-chocolate.webp?v=4",
+      "cutout_url": "/menu/death-by-chocolate.webp?v=4",
+      "price": 149,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Signature DBC Bowl",
+          "price": 149,
+          "servingSize": "Multi-Scoop + Brownie + Double Fudge",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Creamy Vanilla & Chocolate Ice Creams",
+        "Belgium Chocolate Scoop",
+        "Warm Brownie Pieces",
+        "Chocolate Chips",
+        "Chocolate Chunks",
+        "Signature Chocolate Fudge",
+        "Choco Dip Sauce",
+        "Cherries"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "nutty-death-by-chocolate",
+        "brownie-with-ice-cream-sizzler",
+        "belgium-chocolate"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#EFECE8",
+        "primaryScoopColor": "#4E2E20",
+        "secondaryScoopColor": "#FDF5DF",
+        "sauceColor": "#24120B",
+        "toppingType": "choco-chips",
+        "toppingColor": "#3B2014",
+        "ambientGlow": "#F8C8C8",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Deep Signature Sundae Bowl",
+            "detail": "Generous sharing-size vessel",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Creamy Duo & Belgium Chocolate Scoops",
+            "detail": "Rich multi-scoop foundation",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Double Dose: Chocolate Fudge & Choco Dip",
+            "detail": "Twin molten chocolate sauces",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Brownie Pieces, Choco Chunks, Chips & Cherries",
+            "detail": "Ultimate chocolate overload",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "prod-nutty-death-by-chocolate",
+      "slug": "nutty-death-by-chocolate",
+      "name": "Nutty Death by Chocolate",
+      "category_id": "cat-sundaes",
+      "category_name": "Ice Cream Sundaes",
+      "category_slug": "ice-cream-sundaes",
+      "description": "Our iconic Death by Chocolate—creamy scoops, Belgium Chocolate, brownie chunks, and double chocolate fudge—generously crowned with roasted cashews & almond nuts.",
+      "image_url": "/menu/nutty-death-by-chocolate.webp?v=4",
+      "cutout_url": "/menu/nutty-death-by-chocolate.webp?v=4",
+      "price": 159,
+      "variants": [
+        {
+          "id": "standard",
+          "name": "Deluxe Nutty DBC Bowl",
+          "price": 159,
+          "servingSize": "DBC + Roasted Cashews & Almonds",
+          "available": true
+        }
+      ],
+      "ingredients": [
+        "Creamy Ice Creams",
+        "Belgium Chocolate",
+        "Brownie Pieces",
+        "Signature Chocolate Fudge",
+        "Choco Dip Sauce",
+        "Roasted Cashews",
+        "Roasted Almond Nuts"
+      ],
+      "allergens": [
+        "Milk / Dairy",
+        "Tree Nuts (Almond, Cashew)",
+        "Wheat / Gluten",
+        "Soy"
+      ],
+      "availability": true,
+      "featured": true,
+      "seasonal": false,
+      "recommended_slugs": [
+        "death-by-chocolate",
+        "nuts-heaven-sundae",
+        "ferrero-shake"
+      ],
+      "exploded_spec": {
+        "vesselType": "glass-coupe",
+        "vesselColor": "#3D4F7C",
+        "primaryScoopColor": "#FDF5DF",
+        "secondaryScoopColor": "#4E2E20",
+        "sauceColor": "#24120B",
+        "toppingType": "almonds-cashews",
+        "toppingColor": "#D7A96E",
+        "ambientGlow": "#F8D0BE",
+        "layers": [
+          {
+            "id": "vessel",
+            "label": "Cobalt Glass Sundae Bowl",
+            "detail": "Signature blue-rimmed glass bowl",
+            "elevationY": -1.3
+          },
+          {
+            "id": "base-scoop",
+            "label": "Creamy & Belgian Chocolate Scoops",
+            "detail": "Layered over warm brownie pieces",
+            "elevationY": -0.2
+          },
+          {
+            "id": "ribbon",
+            "label": "Double Chocolate Fudge & Dip Sauce",
+            "detail": "Rich cascading cocoa fudge",
+            "elevationY": 0.7
+          },
+          {
+            "id": "garnish",
+            "label": "Roasted Cashews & Toasted Almond Nuts",
+            "detail": "Golden nut crunch finale",
+            "elevationY": 1.5
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1a7d21a2-4858-4396-bcb8-98737419028c",
+      "order_reference": "NICE-261012-Q9M5",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "187808e1-67ee-48d9-b015-064ae97338a6",
+          "order_id": "1a7d21a2-4858-4396-bcb8-98737419028c"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "408f9450-4e8a-4e31-97c4-324c74492be0",
+          "order_id": "1a7d21a2-4858-4396-bcb8-98737419028c"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T20:19:36.606Z",
+      "updated_at": "2026-10-12T20:19:36.606Z"
+    },
+    {
+      "id": "f32a7f33-8110-430c-8156-7a5441e29b44",
+      "order_reference": "NICE-261012-G6YE",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "f81021f7-8eaf-442c-8829-6011af8c9242",
+          "order_id": "f32a7f33-8110-430c-8156-7a5441e29b44"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "2fdffcf5-3262-41a1-b30d-4148a233b275",
+          "order_id": "f32a7f33-8110-430c-8156-7a5441e29b44"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T19:52:21.603Z",
+      "updated_at": "2026-10-12T19:52:21.603Z"
+    },
+    {
+      "id": "07a318b5-03b1-40a3-a164-f45d3ad8c218",
+      "order_reference": "NICE-261012-UJ2Z",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "fc0da1e4-0609-4e6d-8dd0-cb7c1d7ff15e",
+          "order_id": "07a318b5-03b1-40a3-a164-f45d3ad8c218"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "ceb39537-8b43-4612-a9a8-a98ea2f68e94",
+          "order_id": "07a318b5-03b1-40a3-a164-f45d3ad8c218"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T19:35:27.170Z",
+      "updated_at": "2026-10-12T19:35:27.170Z"
+    },
+    {
+      "id": "4720f288-caea-41e8-b393-8a28812a5ab9",
+      "order_reference": "NICE-261012-6LQ3",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "32920e78-a932-4000-9f22-b47c8190b71d",
+          "order_id": "4720f288-caea-41e8-b393-8a28812a5ab9"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "40721f83-5da2-4de7-838e-a76f391a2563",
+          "order_id": "4720f288-caea-41e8-b393-8a28812a5ab9"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T19:08:29.133Z",
+      "updated_at": "2026-10-12T19:08:29.133Z"
+    },
+    {
+      "id": "0687ac72-7a1d-4237-b1ef-5d2f45b08ee7",
+      "order_reference": "NICE-261012-4BNY",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "c276c263-5cfc-4985-b980-ade53b0941ad",
+          "order_id": "0687ac72-7a1d-4237-b1ef-5d2f45b08ee7"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "51f754dc-1e08-4fa3-b774-a251215b810a",
+          "order_id": "0687ac72-7a1d-4237-b1ef-5d2f45b08ee7"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T18:55:09.507Z",
+      "updated_at": "2026-10-12T18:55:09.507Z"
+    },
+    {
+      "id": "e6296a2c-e1c0-4caa-aad6-a097f84596f0",
+      "order_reference": "NICE-261012-52YV",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "656c399b-6e0d-47cb-9926-ed0ccd341195",
+          "order_id": "e6296a2c-e1c0-4caa-aad6-a097f84596f0"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "547caf0d-2464-4f35-9c7a-37cae7650aae",
+          "order_id": "e6296a2c-e1c0-4caa-aad6-a097f84596f0"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T18:39:18.157Z",
+      "updated_at": "2026-10-12T18:39:18.157Z"
+    },
+    {
+      "id": "67508d39-808c-4704-8f76-e84176038cbb",
+      "order_reference": "NICE-261012-AHPB",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "55460dcc-c276-4cf9-8f68-1fed02f3c09c",
+          "order_id": "67508d39-808c-4704-8f76-e84176038cbb"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "57fd77c9-1db3-4281-8d9f-cfb1fb669672",
+          "order_id": "67508d39-808c-4704-8f76-e84176038cbb"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T18:37:36.924Z",
+      "updated_at": "2026-10-12T18:37:36.924Z"
+    },
+    {
+      "id": "b1215b6f-72c8-481e-88d6-932dec4c6771",
+      "order_reference": "NICE-261012-M92X",
+      "customer_name": "Sandeep Kumar",
+      "customer_phone": "9985422222",
+      "order_type": "delivery",
+      "delivery_address": "Hanamkonda Main Road, Warangal",
+      "preferred_time": "Today 8:00 PM",
+      "subtotal": 269,
+      "fees": 0,
+      "discount": 0,
+      "total": 269,
+      "notes": "Extra hot fudge please",
+      "party_date": null,
+      "guest_count": null,
+      "status": "Awaiting WhatsApp confirmation",
+      "items": [
+        {
+          "product_id": "prod-brownie-with-ice-cream-sizzler",
+          "product_slug": "brownie-with-ice-cream-sizzler",
+          "product_name_snapshot": "Brownie with Ice Cream Sizzler",
+          "variant_snapshot": "Hot Sizzling Platter",
+          "unit_price_snapshot": 120,
+          "quantity": 1,
+          "line_total": 120,
+          "id": "b4a2cbb7-e615-46f9-8970-ad91ab42ed53",
+          "order_id": "b1215b6f-72c8-481e-88d6-932dec4c6771"
+        },
+        {
+          "product_id": "prod-death-by-chocolate",
+          "product_slug": "death-by-chocolate",
+          "product_name_snapshot": "Death by Chocolate",
+          "variant_snapshot": "Signature DBC Bowl",
+          "unit_price_snapshot": 149,
+          "quantity": 1,
+          "line_total": 149,
+          "id": "a3ebc440-fac3-4cbe-9433-cf4dcd9ce2eb",
+          "order_id": "b1215b6f-72c8-481e-88d6-932dec4c6771"
+        }
+      ],
+      "whatsapp_url": "https://wa.me/919985422222",
+      "created_at": "2026-10-12T18:17:50.429Z",
+      "updated_at": "2026-10-12T18:17:50.429Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "723cd9d3-ab22-447a-b00a-db77b9d60833",
+      "enquiry_reference": "PARTY-261012-2PM1",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T20:19:36.636Z"
+    },
+    {
+      "id": "6413af8f-5d10-4f95-9442-cc64a83df3dc",
+      "enquiry_reference": "PARTY-261012-H644",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T19:52:21.652Z"
+    },
+    {
+      "id": "ebc04179-41fc-436d-8ed1-49b198a3bd4b",
+      "enquiry_reference": "PARTY-261012-ZJ7Z",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T19:35:27.198Z"
+    },
+    {
+      "id": "459e1510-5d7e-4129-8426-a6841f929f1a",
+      "enquiry_reference": "PARTY-261012-JFD1",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T19:08:29.149Z"
+    },
+    {
+      "id": "60c9ad12-25ed-4367-9da4-e83d10f4f50f",
+      "enquiry_reference": "PARTY-261012-6Q1I",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T18:55:09.528Z"
+    },
+    {
+      "id": "e9667f4f-07ce-4869-a1c1-0ebe8c7f2694",
+      "enquiry_reference": "PARTY-261012-LMI5",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T18:39:18.172Z"
+    },
+    {
+      "id": "a544ece7-23a5-4c0d-a8b0-56e7ac559373",
+      "enquiry_reference": "PARTY-261012-QW6U",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T18:37:36.941Z"
+    },
+    {
+      "id": "e19abccf-6b77-456e-bf77-0512d91ce7ee",
+      "enquiry_reference": "PARTY-261012-GR7V",
+      "customer_name": "Priya Rao",
+      "customer_phone": "9876543210",
+      "event_type": "Birthday Party",
+      "event_date": "2026-11-15",
+      "guest_count": 120,
+      "budget": "₹12,000",
+      "delivery_preference": "delivery",
+      "location": "Hanamkonda",
+      "order_preferences": [
+        "Fruit Salad with Ice Cream Counter"
+      ],
+      "status": "Pending",
+      "notes": null,
+      "whatsapp_url": "https://wa.me/919985422222?text=%F0%9F%8E%89%20*NICE%20ICE%20CREAMS%20%E2%80%94%20PARTY%20%26%20BULK%20BOOKING%20ENQUIRY*%0A%F0%9F%94%96%20*Enquiry%20Ref%3A*%20PARTY-TEST%0AStatus%3A%20Pending%20Business%20Confirmation%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%91%A4%20*Host%20Name%3A*%20Priya%20Rao%0A%F0%9F%93%9E%20*Phone%3A*%209876543210%0A%F0%9F%8E%8A%20*Event%20Type%3A*%20Birthday%20Party%0A%F0%9F%93%85%20*Event%20Date%3A*%202026-11-15%0A%F0%9F%91%A5%20*Estimated%20Guests%3A*%20120%0A%F0%9F%9A%9A%20*Service%20Mode%3A*%20Venue%20Delivery%20%2F%20Catering%0A%F0%9F%93%8D%20*Venue%20%2F%20Location%3A*%20Hanamkonda%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0A%F0%9F%8D%A8%20*Desired%20Flavours%20%26%20Desserts%3A*%0A%E2%80%A2%20Fruit%20Salad%20with%20Ice%20Cream%20Counter%0A%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0APlease%20let%20us%20know%20package%20options%20and%20availability%20for%20our%20event!",
+      "created_at": "2026-10-12T18:17:50.468Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "784e2e6f-c43a-4306-b89a-f99fa3e1ca76",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T20:19:36.667Z"
+    },
+    {
+      "id": "fd8e64de-ade7-400f-9430-7f8a8dced373",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T20:19:36.657Z"
+    },
+    {
+      "id": "8dce1829-cd3a-4f9c-85a2-b6b3aedd76ef",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T19:52:21.725Z"
+    },
+    {
+      "id": "61d16ff0-82ef-415b-bbab-4ddfef98f92a",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T19:52:21.708Z"
+    },
+    {
+      "id": "5f153de9-f3ad-43b3-9a4d-d04e78db0220",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T19:35:27.232Z"
+    },
+    {
+      "id": "c36dc602-2e1d-4de6-971e-7d8f70cb1696",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T19:35:27.224Z"
+    },
+    {
+      "id": "fc900d3b-8799-4569-a6db-e20f72cc3460",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T19:08:29.163Z"
+    },
+    {
+      "id": "795519da-a243-4530-817f-5a7a77c770d0",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T19:08:29.159Z"
+    },
+    {
+      "id": "7c6c603d-c847-4348-b849-32c30843c891",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T18:55:09.546Z"
+    },
+    {
+      "id": "d068ddd1-ff5f-4591-aa87-26257e70f2e8",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T18:55:09.542Z"
+    },
+    {
+      "id": "56be9c11-da6a-430e-a84c-b4e56ac3cfcf",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T18:39:18.187Z"
+    },
+    {
+      "id": "ac41b15a-db8b-4969-8ee1-052961c251a7",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T18:39:18.183Z"
+    },
+    {
+      "id": "79d2c3dd-bf34-4395-870e-1d4fb327d38a",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T18:37:36.961Z"
+    },
+    {
+      "id": "ecd7f59f-e5d0-44c4-b618-e50b7c214ce6",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T18:37:36.953Z"
+    },
+    {
+      "id": "7b38ef37-6504-403e-9db7-bc8bc8b01758",
+      "actor": "test-admin",
+      "action": "DELETE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Deleted product \"Test Kesar Pista Scoop\" (test-kesar-pista-scoop)",
+      "created_at": "2026-10-12T18:17:50.530Z"
+    },
+    {
+      "id": "b8591bf3-97c5-41dc-9187-8b8d74ceb3ce",
+      "actor": "test-admin",
+      "action": "CREATE_PRODUCT",
+      "entity_type": "product",
+      "entity_id": "prod-test-kesar-pista-scoop",
+      "details": "Created product \"Test Kesar Pista Scoop\" (₹75, available=true)",
+      "created_at": "2026-10-12T18:17:50.498Z"
+    },
+    {
+      "id": "5c1c4eab-5a42-4917-b30e-9b0fb21406cf",
+      "actor": "system",
+      "action": "SEED_DATABASE",
+      "entity_type": "product",
+      "entity_id": "initial-catalogue",
+      "details": "Seeded 8 categories and 49 verified menu products.",
+      "created_at": "2026-10-12T18:17:50.415Z"
+    }
+  ],
+  "idempotency_keys": {}
+}
