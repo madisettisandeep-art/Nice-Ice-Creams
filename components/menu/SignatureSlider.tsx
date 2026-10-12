@@ -99,7 +99,7 @@ export const SignatureSlider = React.memo(function SignatureSlider({
   ];
 
   const handleQuickAdd = (product: Product) => {
-    const v = product.variants.find((x) => x.available) || product.variants[0];
+    const v = product.variants?.find((x) => x.available) || product.variants?.[0];
     if (!v) return;
     addItem(product, v.id, 1);
     setAddedId(product.id);

@@ -20,15 +20,32 @@ import {
 
 export function ProductPageClient({
   product,
-  recommendedProducts,
+  recommendedProducts = [],
 }: {
   product: Product;
   recommendedProducts: Product[];
 }) {
   const { addItem, setCartDrawerOpen } = useCart();
 
-  const firstAvail =
-    product.variants.find((v) => v.available) || product.variants[0];
+  const variants = product.variants?.length
+    ? product.variants
+    : [
+        {
+          id: "standard",
+          name: "Standard Serving",
+          price: product.price,
+          servingSize: "1 Serving",
+          available: true,
+        },
+      ];
+  const ingredients = product.ingredients?.length
+    ? product.ingredients
+    : ["Pure Milk", "Fresh Dairy Cream"];
+  const allergens = product.allergens?.length
+    ? product.allergens
+    : ["Milk / Dairy"];
+
+  const firstAvail = variants.find((v) => v.available) || variants[0];
   const [selectedVariantId, setSelectedVariantId] = useState(
     firstAvail?.id || "standard"
   );
@@ -36,8 +53,7 @@ export function ProductPageClient({
   const [added, setAdded] = useState(false);
 
   const selectedVariant =
-    product.variants.find((v) => v.id === selectedVariantId) ||
-    product.variants[0];
+    variants.find((v) => v.id === selectedVariantId) || variants[0];
   const unitPrice = selectedVariant ? selectedVariant.price : product.price;
   const totalPrice = Math.round(unitPrice * quantity * 100) / 100;
   const canOrder =
@@ -78,6 +94,9 @@ export function ProductPageClient({
             <img
               src={product.image_url}
               alt={product.name}
+              onError={(e) => {
+                e.currentTarget.src = "/menu/vanilla.webp?v=4";
+              }}
               className="h-full w-full object-cover"
             />
           </div>
@@ -156,13 +175,13 @@ export function ProductPageClient({
             </p>
 
             {/* Variant Selector */}
-            {product.variants.length > 0 && (
+            {variants.length > 0 && (
               <div className="space-y-2 pt-2">
                 <label className="block text-xs font-bold uppercase tracking-wider text-cinema-800/75">
                   Choose Serving Size / Variant
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-                  {product.variants.map((variant) => {
+                  {variants.map((variant) => {
                     const active = variant.id === selectedVariant?.id;
                     return (
                       <button
@@ -196,7 +215,7 @@ export function ProductPageClient({
                   Ingredients
                 </div>
                 <div className="text-xs text-cinema-900 leading-relaxed">
-                  {product.ingredients.join(" • ")}
+                  {ingredients.join(" • ")}
                 </div>
               </div>
               <div className="rounded-2xl bg-ivory-100 border border-ivory-300 p-3.5">
@@ -204,7 +223,7 @@ export function ProductPageClient({
                   Allergens
                 </div>
                 <div className="text-xs font-semibold text-amber-900 leading-relaxed">
-                  Contains: {product.allergens.join(", ")}
+                  Contains: {allergens.join(", ")}
                 </div>
               </div>
             </div>

@@ -67,9 +67,9 @@ export async function GET(req: NextRequest) {
     };
   }
 
-  // Payload compression: strip bulky internal 3D spec fields when compact=true
+  // Payload compression: strip only unused cutout_url when compact=true, preserving exploded_spec.layers for the product modal
   const serializedProducts = compact
-    ? products.map(({ exploded_spec: _spec, cutout_url: _cutout, ...rest }) => rest)
+    ? products.map(({ cutout_url: _cutout, ...rest }) => rest)
     : products;
 
   const payloadObj = pagination

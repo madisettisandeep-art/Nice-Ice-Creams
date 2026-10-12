@@ -28,7 +28,41 @@ export function ProductDetailModal() {
     openProductModal,
   } = useCart();
 
-  const product = activeProductModal?.product ?? null;
+  const rawProduct = activeProductModal?.product ?? null;
+  const seedFallback = rawProduct
+    ? INITIAL_PRODUCTS.find(
+        (p) => p.slug === rawProduct.slug || p.id === rawProduct.id
+      )
+    : undefined;
+  const product = rawProduct
+    ? {
+        ...seedFallback,
+        ...rawProduct,
+        variants: rawProduct.variants?.length
+          ? rawProduct.variants
+          : seedFallback?.variants ?? [
+              {
+                id: "standard",
+                name: "Standard Serving",
+                price: rawProduct.price,
+                servingSize: "1 Serving",
+                available: true,
+              },
+            ],
+        exploded_spec: rawProduct.exploded_spec?.layers?.length
+          ? rawProduct.exploded_spec
+          : seedFallback?.exploded_spec ?? { layers: [] },
+        ingredients: rawProduct.ingredients?.length
+          ? rawProduct.ingredients
+          : seedFallback?.ingredients ?? ["Pure Milk", "Fresh Dairy Cream"],
+        allergens: rawProduct.allergens?.length
+          ? rawProduct.allergens
+          : seedFallback?.allergens ?? ["Milk / Dairy"],
+        recommended_slugs: rawProduct.recommended_slugs?.length
+          ? rawProduct.recommended_slugs
+          : seedFallback?.recommended_slugs ?? [],
+      }
+    : null;
 
   const [selectedVariantId, setSelectedVariantId] = useState<string>("");
   const [quantity, setQuantity] = useState<number>(1);
@@ -43,16 +77,16 @@ export function ProductDetailModal() {
       setQuantity(1);
       setJustAdded(false);
     }
-  }, [product]);
+  }, [rawProduct]);
 
   useEffect(() => {
-    if (!product) return;
+    if (!rawProduct) return;
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") closeProductModal();
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [product, closeProductModal]);
+  }, [rawProduct, closeProductModal]);
 
   if (!product) return null;
 
@@ -73,7 +107,7 @@ export function ProductDetailModal() {
   const canOrder =
     product.availability && (!selectedVariant || selectedVariant.available);
 
-  const recommendedProducts = product.recommended_slugs
+  const recommendedProducts = (product.recommended_slugs || [])
     .map((slug) => INITIAL_PRODUCTS.find((p) => p.slug === slug))
     .filter(Boolean);
 
@@ -83,6 +117,8 @@ export function ProductDetailModal() {
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1800);
   };
+
+  const layers = product.exploded_spec?.layers ?? [];
 
   return (
     <div
@@ -128,7 +164,7 @@ export function ProductDetailModal() {
                 <ChevronLeft className="w-4 h-4" aria-hidden="true" />
               </button>
               <span className="text-[11px] font-mono text-ivory-300 px-1">
-                {String(currentIdx + 1).padStart(2, "0")}/49
+                {String(Math.max(1, currentIdx + 1)).padStart(2, "0")}/49
               </span>
               <button
                 type="button"
@@ -147,6 +183,9 @@ export function ProductDetailModal() {
                 key={product.slug}
                 src={product.image_url}
                 alt={product.name}
+                onError={(e) => {
+                  e.currentTarget.src = "/menu/vanilla.webp?v=4";
+                }}
                 initial={{ opacity: 0, x: slideDir > 0 ? 60 : -60, scale: 0.96 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 exit={{ opacity: 0, x: slideDir > 0 ? -60 : 60, scale: 0.96 }}
@@ -157,21 +196,23 @@ export function ProductDetailModal() {
           </div>
 
           {/* Ingredient Layer Breakdown Pills */}
-          <div className="grid grid-cols-2 gap-2">
-            {product.exploded_spec.layers.slice(0, 4).map((layer, idx) => (
-              <div
-                key={layer.id}
-                className="rounded-xl bg-white/5 border border-white/10 px-3 py-2"
-              >
-                <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-cyan">
-                  0{idx + 1} • {layer.label}
+          {layers.length > 0 && (
+            <div className="grid grid-cols-2 gap-2">
+              {layers.slice(0, 4).map((layer, idx) => (
+                <div
+                  key={layer.id || idx}
+                  className="rounded-xl bg-white/5 border border-white/10 px-3 py-2"
+                >
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-cyan">
+                    0{idx + 1} • {layer.label}
+                  </div>
+                  <div className="text-[11px] text-ivory-300 truncate">
+                    {layer.detail}
+                  </div>
                 </div>
-                <div className="text-[11px] text-ivory-300 truncate">
-                  {layer.detail}
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Right Column: Product Details & Ordering Controls */}
@@ -290,6 +331,9 @@ export function ProductDetailModal() {
                         <img
                           src={rec.image_url}
                           alt={rec.name}
+                          onError={(e) => {
+                            e.currentTarget.src = "/menu/vanilla.webp?v=4";
+                          }}
                           className="w-5 h-5 rounded-full object-cover"
                         />
                         <span>{rec.name}</span>

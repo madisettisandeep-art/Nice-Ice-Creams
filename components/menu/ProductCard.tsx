@@ -116,9 +116,9 @@ export const ProductCard = React.memo(function ProductCard({
     CATEGORY_VISUAL_THEMES[product.category_slug] || DEFAULT_THEME;
 
   const defaultVariant =
-    product.variants.find((v) => v.available) || product.variants[0];
+    product.variants?.find((v) => v.available) || product.variants?.[0];
   const displayPrice = defaultVariant ? defaultVariant.price : product.price;
-  const hasMultipleVariants = product.variants.length > 1;
+  const hasMultipleVariants = (product.variants?.length ?? 0) > 1;
 
   const handleQuickAdd = useCallback(
     (e: React.MouseEvent) => {

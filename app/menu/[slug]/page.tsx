@@ -41,7 +41,7 @@ export default async function ProductDetailPage({
   }
 
   const recommendedProducts = await getProductsBySlugsOrIds(
-    product.recommended_slugs
+    product.recommended_slugs || []
   );
 
   const productJsonLd = {

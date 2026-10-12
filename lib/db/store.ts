@@ -375,8 +375,8 @@ export async function getProductBySlugOrId(identifier: string): Promise<Product 
 }
 
 // Batch O(1) Indexed Lookup — eliminates N+1 database queries when resolving recommended products or cart items
-export async function getProductsBySlugsOrIds(identifiers: string[]): Promise<Product[]> {
-  if (identifiers.length === 0) return [];
+export async function getProductsBySlugsOrIds(identifiers?: string[]): Promise<Product[]> {
+  if (!identifiers || !Array.isArray(identifiers) || identifiers.length === 0) return [];
   const cacheKey = `products:batch:${identifiers.join(",")}`;
   const cached = getCachedQuery<Product[]>(cacheKey);
   if (cached) return cached;

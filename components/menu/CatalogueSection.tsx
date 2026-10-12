@@ -223,7 +223,7 @@ export function CatalogueSection({
         const inName = p.name.toLowerCase().includes(q);
         const inDesc = p.description.toLowerCase().includes(q);
         const inCat = p.category_name.toLowerCase().includes(q);
-        const inIng = p.ingredients.some((i) => i.toLowerCase().includes(q));
+        const inIng = (p.ingredients || []).some((i) => i.toLowerCase().includes(q));
         if (!inName && !inDesc && !inCat && !inIng) return false;
       }
       return true;

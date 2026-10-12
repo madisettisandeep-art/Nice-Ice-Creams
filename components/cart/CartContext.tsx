@@ -296,10 +296,40 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const openProductModal = useCallback(
     (product: Product, autoPlayExploded = false) => {
-      setActiveProductModal({ product, autoPlayExploded });
+      const seedMatch = INITIAL_PRODUCTS.find(
+        (p) => p.slug === product.slug || p.id === product.id
+      );
+      const hydratedProduct: Product = seedMatch
+        ? {
+            ...seedMatch,
+            ...product,
+            exploded_spec:
+              product.exploded_spec?.layers?.length
+                ? product.exploded_spec
+                : seedMatch.exploded_spec,
+            variants:
+              product.variants?.length
+                ? product.variants
+                : seedMatch.variants,
+            ingredients:
+              product.ingredients?.length
+                ? product.ingredients
+                : seedMatch.ingredients,
+            allergens:
+              product.allergens?.length
+                ? product.allergens
+                : seedMatch.allergens,
+            recommended_slugs:
+              product.recommended_slugs?.length
+                ? product.recommended_slugs
+                : seedMatch.recommended_slugs,
+          }
+        : product;
+
+      setActiveProductModal({ product: hydratedProduct, autoPlayExploded });
       trackEvent("product_viewed", {
-        product_slug: product.slug,
-        category: product.category_slug,
+        product_slug: hydratedProduct.slug,
+        category: hydratedProduct.category_slug,
         auto_exploded: autoPlayExploded,
       });
     },
