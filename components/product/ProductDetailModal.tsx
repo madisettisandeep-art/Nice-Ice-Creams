@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCart } from "@/components/cart/CartContext";
+import { Product } from "@/lib/db/types";
 import { INITIAL_PRODUCTS } from "@/lib/db/seed-data";
 import {
   AlertCircle,
@@ -34,9 +35,9 @@ export function ProductDetailModal() {
         (p) => p.slug === rawProduct.slug || p.id === rawProduct.id
       )
     : undefined;
-  const product = rawProduct
+  const product: Product | null = rawProduct
     ? {
-        ...seedFallback,
+        ...(seedFallback ?? INITIAL_PRODUCTS[0]),
         ...rawProduct,
         variants: rawProduct.variants?.length
           ? rawProduct.variants
@@ -51,7 +52,7 @@ export function ProductDetailModal() {
             ],
         exploded_spec: rawProduct.exploded_spec?.layers?.length
           ? rawProduct.exploded_spec
-          : seedFallback?.exploded_spec ?? { layers: [] },
+          : seedFallback?.exploded_spec ?? INITIAL_PRODUCTS[0].exploded_spec,
         ingredients: rawProduct.ingredients?.length
           ? rawProduct.ingredients
           : seedFallback?.ingredients ?? ["Pure Milk", "Fresh Dairy Cream"],
