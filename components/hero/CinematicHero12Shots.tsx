@@ -18,6 +18,7 @@ export function CinematicHero12Shots() {
   const [shotLocalProgress, setShotLocalProgress] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [isMobileViewport, setIsMobileViewport] = useState(false);
+  const [mobileFitMode, setMobileFitMode] = useState<"fit" | "fill">("fit");
   const [isHeroInView, setIsHeroInView] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
   const [needsInteractionForAudio, setNeedsInteractionForAudio] = useState(false);
@@ -44,7 +45,8 @@ export function CinematicHero12Shots() {
     const updateGeometry = () => {
       const w = window.innerWidth;
       const h = window.innerHeight;
-      setIsMobileViewport(w < 768);
+      const isMobile = w < 768 || w / h < 1.15;
+      setIsMobileViewport(isMobile);
 
       // Compute exact object-cover projection of (1740, 900) in a 1920x1080 frame
       const videoW = 1920;
@@ -323,7 +325,7 @@ export function CinematicHero12Shots() {
       aria-label="NICE ICE CREAMS 12-Shot Cinematic Story"
       className="relative w-full bg-black text-ivory-50 select-none"
       style={{
-        height: reducedMotion ? "auto" : isMobileViewport ? "420vh" : "640vh",
+        height: reducedMotion ? "auto" : isMobileViewport ? "480vh" : "640vh",
       }}
     >
       {reducedMotion ? (
@@ -351,134 +353,278 @@ export function CinematicHero12Shots() {
           </div>
         </div>
       ) : (
-        /* Sticky Full-Screen Unobstructed Cinematic Viewport */
+        /* Sticky Full-Screen Cinematic Viewport (100% Mobile & Desktop Compatible) */
         <div
           ref={stageRef}
-          className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center bg-black"
+          className="sticky top-0 h-screen h-[100dvh] w-full overflow-hidden flex items-center justify-center bg-black"
         >
-          <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-            {/* Instant LCP Poster Backdrop (Watermarks cleaned) with fetchPriority="high" */}
+          {/* Ambient Glowing Backdrop (Fills mobile portrait space with matching shot colors) */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none select-none z-0">
             <img
               src={currentShot.posterSrc}
-              alt={currentShot.code}
-              width={1920}
-              height={1080}
-              fetchPriority="high"
-              decoding="sync"
-              className="absolute inset-0 h-full w-full object-cover transition-opacity duration-300"
+              alt=""
+              className="w-full h-full object-cover blur-3xl scale-125 opacity-40 md:opacity-0 transition-opacity duration-700"
             />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/35 to-black/90 md:hidden" />
+          </div>
 
-            {/* Primary Active Shot Video — 100% Unobstructed & Full Brightness */}
-            <video
-              ref={primaryVideoRef}
-              poster={currentShot.posterSrc}
-              loop
-              playsInline
-              autoPlay
-              className="relative z-10 h-full w-full object-cover transition-opacity duration-250"
-              style={{
-                opacity: Math.max(0.45, edgeFade),
-              }}
-            />
+          {/* Silent Next-Clip Metadata Preloader (Never plays audio) */}
+          <video
+            ref={preloadVideoRef}
+            muted
+            playsInline
+            className="hidden"
+            aria-hidden="true"
+          />
 
-            {/* Silent Next-Clip Metadata Preloader (Never plays audio) */}
-            <video
-              ref={preloadVideoRef}
-              muted
-              playsInline
-              className="hidden"
-              aria-hidden="true"
-            />
+          {isMobileViewport && mobileFitMode === "fit" ? (
+            /* MOBILE PRESENTATION: 100% Fully Visible 16:9 Cinematic Video + Story Card */
+            <div className="relative z-10 w-full h-full flex flex-col justify-between items-center px-3 sm:px-6 pt-16 pb-4 sm:pt-20 sm:pb-6 overflow-hidden">
+              {/* Centered 16:9 Video Frame — 100% Uncropped & Unobstructed */}
+              <div className="w-full max-w-lg my-auto flex flex-col items-center">
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.85)] border border-white/20 bg-black shrink-0">
+                  {/* Instant LCP Poster Backdrop */}
+                  <img
+                    src={currentShot.posterSrc}
+                    alt={currentShot.code}
+                    width={1920}
+                    height={1080}
+                    fetchPriority="high"
+                    decoding="sync"
+                    className="absolute inset-0 h-full w-full object-contain transition-opacity duration-300"
+                  />
 
-            {/* Numberless Transparent Side Capsule Indicator Rail + Sound/Mute Control */}
-            <aside
-              aria-label="Hero shot sequence and sound controls"
-              className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-3"
-            >
-              {/* Minimalist Numberless Dot/Capsule Sequence Pill */}
-              <div className="flex flex-col items-center gap-2 py-3 px-2 rounded-full bg-black/15 hover:bg-black/30 backdrop-blur-sm border border-white/15 transition-all duration-300 opacity-70 hover:opacity-100">
-                {HERO_SHOTS_MANIFEST.map((shot, idx) => {
-                  const isCurrent = idx === activeShotIndex;
-                  const isCompleted = idx < activeShotIndex;
-                  return (
+                  {/* Primary Active Shot Video */}
+                  <video
+                    ref={primaryVideoRef}
+                    poster={currentShot.posterSrc}
+                    loop
+                    playsInline
+                    autoPlay
+                    className="relative z-10 h-full w-full object-contain transition-opacity duration-250"
+                    style={{
+                      opacity: Math.max(0.45, edgeFade),
+                    }}
+                  />
+
+                  {/* Discrete Watermark Hallmark Badge Inside 16:9 Frame */}
+                  <div
+                    style={{ left: "90.625%", top: "83.333%" }}
+                    className="absolute z-20 -translate-x-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-black/85 backdrop-blur-[2px] border border-white/25 flex items-center justify-center shadow-md pointer-events-none"
+                  >
+                    <span className="text-[10px] font-black text-amber-300 leading-none">✦</span>
+                  </div>
+                </div>
+
+                {/* Mobile Story Title, Tagline & Controls Card */}
+                <div className="w-full pt-3 pb-1 flex flex-col items-center text-center space-y-1.5 shrink-0">
+                  <div className="flex items-center gap-2">
+                    <span className="rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-3 py-0.5 text-[10px] font-extrabold uppercase tracking-widest text-[#FDE68A]">
+                      {currentShot.code} OF 12 • {currentShot.title}
+                    </span>
                     <button
-                      key={shot.shotNumber}
                       type="button"
-                      onClick={() => jumpToShot(idx)}
-                      aria-label={`Slide ${shot.shotNumber}`}
-                      aria-current={isCurrent ? "step" : undefined}
-                      className="group flex items-center justify-center p-0.5 focus:outline-none"
+                      onClick={() => setMobileFitMode("fill")}
+                      className="rounded-full bg-white/10 hover:bg-white/20 border border-white/15 px-2.5 py-0.5 text-[10px] font-bold text-white/80 hover:text-white transition"
+                      title="Expand to full screen"
                     >
-                      <span
-                        className="block w-1.5 rounded-full overflow-hidden transition-all duration-300"
-                        style={{
-                          height: isCurrent ? "22px" : "6px",
-                          backgroundColor: isCurrent
-                            ? "rgba(255,255,255,0.28)"
-                            : isCompleted
-                            ? "rgba(255,255,255,0.55)"
-                            : "rgba(255,255,255,0.22)",
-                        }}
-                      >
-                        {isCurrent && (
-                          <span
-                            className="block w-full bg-white rounded-full shadow-[0_0_8px_rgba(255,255,255,0.9)] transition-all duration-100"
-                            style={{
-                              height: `${Math.max(20, Math.round(shotLocalProgress * 100))}%`,
-                            }}
-                          />
-                        )}
-                      </span>
+                      Fill View
                     </button>
-                  );
-                })}
+                  </div>
+
+                  <p className="text-xs font-semibold text-white/95 leading-snug">
+                    {currentShot.subtitle}
+                  </p>
+
+                  <p className="text-[11px] text-ivory-200/75 leading-relaxed max-w-xs line-clamp-2">
+                    {currentShot.caption}
+                  </p>
+
+                  {/* Mobile 12-Shot Progress Bar & Mute Control */}
+                  <div className="flex items-center gap-2.5 pt-1">
+                    <div className="flex items-center gap-1.5 py-1 px-2.5 rounded-full bg-black/35 backdrop-blur-md border border-white/15">
+                      {HERO_SHOTS_MANIFEST.map((shot, idx) => {
+                        const isCurrent = idx === activeShotIndex;
+                        const isCompleted = idx < activeShotIndex;
+                        return (
+                          <button
+                            key={shot.shotNumber}
+                            type="button"
+                            onClick={() => jumpToShot(idx)}
+                            aria-label={`Jump to slide ${shot.shotNumber}`}
+                            className="p-0.5 focus:outline-none"
+                          >
+                            <span
+                              className="block h-1.5 rounded-full transition-all duration-200"
+                              style={{
+                                width: isCurrent ? "18px" : "5px",
+                                backgroundColor: isCurrent
+                                  ? "#FFFFFF"
+                                  : isCompleted
+                                  ? "rgba(255,255,255,0.6)"
+                                  : "rgba(255,255,255,0.22)",
+                              }}
+                            />
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={toggleMute}
+                      aria-label={effectiveMuted ? "Unmute video sound" : "Mute video sound"}
+                      className="flex items-center justify-center h-8 w-8 rounded-full bg-black/35 hover:bg-black/55 backdrop-blur-md border border-white/15 text-white shadow-sm transition"
+                    >
+                      {effectiveMuted ? (
+                        <VolumeX className="w-3.5 h-3.5 text-white/80" aria-hidden="true" />
+                      ) : (
+                        <Volume2 className="w-3.5 h-3.5 text-white" aria-hidden="true" />
+                      )}
+                    </button>
+                  </div>
+                </div>
               </div>
 
-              {/* Transparent Mute / Unmute Button */}
+              {/* Floating Mobile WhatsApp Order Button */}
               <button
                 type="button"
-                onClick={toggleMute}
-                aria-label={effectiveMuted ? "Unmute video sound" : "Mute video sound"}
-                title={effectiveMuted ? "Unmute sound" : "Mute sound"}
-                className="flex items-center justify-center h-9 w-9 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur-sm border border-white/15 text-white/85 hover:text-white shadow-sm transition-all duration-200 opacity-75 hover:opacity-100"
+                onClick={openWhatsAppChat}
+                aria-label="Order on WhatsApp with NICE ICE CREAMS"
+                title="Order on WhatsApp"
+                className="fixed bottom-4 right-4 z-40 flex items-center justify-center h-13 w-13 rounded-full bg-[#25D366] hover:bg-[#1EBE5B] text-white shadow-[0_8px_24px_rgba(0,0,0,0.6)] ring-4 ring-black/40 hover:scale-105 active:scale-95 transition-transform"
               >
-                {effectiveMuted ? (
-                  <VolumeX className="w-4 h-4 text-white/80" aria-hidden="true" />
-                ) : (
-                  <Volume2 className="w-4 h-4 text-white" aria-hidden="true" />
-                )}
+                <MessageCircle className="w-7 h-7 fill-white text-[#25D366]" aria-hidden="true" />
               </button>
-            </aside>
+            </div>
+          ) : (
+            /* DESKTOP (OR FULL-BLEED MOBILE) VIEWPORT */
+            <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+              {/* Instant LCP Poster Backdrop */}
+              <img
+                src={currentShot.posterSrc}
+                alt={currentShot.code}
+                width={1920}
+                height={1080}
+                fetchPriority="high"
+                decoding="sync"
+                className="absolute inset-0 h-full w-full object-cover transition-opacity duration-300"
+              />
 
-            {/* WhatsApp Floating Icon Button positioned directly over the bottom-right video watermark */}
-            <button
-              type="button"
-              onClick={openWhatsAppChat}
-              aria-label="Chat on WhatsApp with NICE ICE CREAMS"
-              title="Order on WhatsApp"
-              style={
-                watermarkCover.visibleInViewport
-                  ? {
-                      position: "absolute",
-                      left: `${watermarkCover.x}px`,
-                      top: `${watermarkCover.y}px`,
-                      width: `${watermarkCover.size}px`,
-                      height: `${watermarkCover.size}px`,
-                      transform: "translate(-50%, -50%)",
-                    }
-                  : {
-                      position: "absolute",
-                      right: "20px",
-                      bottom: "20px",
-                      width: "64px",
-                      height: "64px",
-                    }
-              }
-              className="z-30 flex items-center justify-center rounded-full bg-[#25D366] hover:bg-[#1EBE5B] text-white shadow-[0_8px_28px_rgba(0,0,0,0.65)] ring-4 ring-black/45 hover:scale-105 transition-transform duration-200"
-            >
-              <MessageCircle className="w-8 h-8 fill-white text-[#25D366]" aria-hidden="true" />
-            </button>
-          </div>
+              {/* Primary Active Shot Video */}
+              <video
+                ref={primaryVideoRef}
+                poster={currentShot.posterSrc}
+                loop
+                playsInline
+                autoPlay
+                className="relative z-10 h-full w-full object-cover transition-opacity duration-250"
+                style={{
+                  opacity: Math.max(0.45, edgeFade),
+                }}
+              />
+
+              {/* Floating "Fit 16:9" Toggle Button when in Mobile Fill Mode */}
+              {isMobileViewport && (
+                <button
+                  type="button"
+                  onClick={() => setMobileFitMode("fit")}
+                  className="absolute top-18 left-4 z-30 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md border border-white/25 px-3 py-1 text-xs font-bold text-white shadow-lg transition"
+                >
+                  ← 100% Fit View
+                </button>
+              )}
+
+              {/* Numberless Transparent Side Capsule Indicator Rail + Sound/Mute Control */}
+              <aside
+                aria-label="Hero shot sequence and sound controls"
+                className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-3"
+              >
+                {/* Minimalist Numberless Dot/Capsule Sequence Pill */}
+                <div className="flex flex-col items-center gap-2 py-3 px-2 rounded-full bg-black/15 hover:bg-black/30 backdrop-blur-sm border border-white/15 transition-all duration-300 opacity-70 hover:opacity-100">
+                  {HERO_SHOTS_MANIFEST.map((shot, idx) => {
+                    const isCurrent = idx === activeShotIndex;
+                    const isCompleted = idx < activeShotIndex;
+                    return (
+                      <button
+                        key={shot.shotNumber}
+                        type="button"
+                        onClick={() => jumpToShot(idx)}
+                        aria-label={`Slide ${shot.shotNumber}`}
+                        aria-current={isCurrent ? "step" : undefined}
+                        className="group flex items-center justify-center p-0.5 focus:outline-none"
+                      >
+                        <span
+                          className="block w-1.5 rounded-full overflow-hidden transition-all duration-300"
+                          style={{
+                            height: isCurrent ? "22px" : "6px",
+                            backgroundColor: isCurrent
+                              ? "rgba(255,255,255,0.28)"
+                              : isCompleted
+                              ? "rgba(255,255,255,0.55)"
+                              : "rgba(255,255,255,0.22)",
+                          }}
+                        >
+                          {isCurrent && (
+                            <span
+                              className="block w-full bg-white rounded-full shadow-[0_0_8px_rgba(255,255,255,0.9)] transition-all duration-100"
+                              style={{
+                                height: `${Math.max(20, Math.round(shotLocalProgress * 100))}%`,
+                              }}
+                            />
+                          )}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Transparent Mute / Unmute Button */}
+                <button
+                  type="button"
+                  onClick={toggleMute}
+                  aria-label={effectiveMuted ? "Unmute video sound" : "Mute video sound"}
+                  title={effectiveMuted ? "Unmute sound" : "Mute sound"}
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur-sm border border-white/15 text-white/85 hover:text-white shadow-sm transition-all duration-200 opacity-75 hover:opacity-100"
+                >
+                  {effectiveMuted ? (
+                    <VolumeX className="w-4 h-4 text-white/80" aria-hidden="true" />
+                  ) : (
+                    <Volume2 className="w-4 h-4 text-white" aria-hidden="true" />
+                  )}
+                </button>
+              </aside>
+
+              {/* WhatsApp Floating Icon Button */}
+              <button
+                type="button"
+                onClick={openWhatsAppChat}
+                aria-label="Chat on WhatsApp with NICE ICE CREAMS"
+                title="Order on WhatsApp"
+                style={
+                  watermarkCover.visibleInViewport
+                    ? {
+                        position: "absolute",
+                        left: `${watermarkCover.x}px`,
+                        top: `${watermarkCover.y}px`,
+                        width: `${watermarkCover.size}px`,
+                        height: `${watermarkCover.size}px`,
+                        transform: "translate(-50%, -50%)",
+                      }
+                    : {
+                        position: "absolute",
+                        right: "20px",
+                        bottom: "20px",
+                        width: "64px",
+                        height: "64px",
+                      }
+                }
+                className="z-30 flex items-center justify-center rounded-full bg-[#25D366] hover:bg-[#1EBE5B] text-white shadow-[0_8px_28px_rgba(0,0,0,0.65)] ring-4 ring-black/45 hover:scale-105 transition-transform duration-200"
+              >
+                <MessageCircle className="w-8 h-8 fill-white text-[#25D366]" aria-hidden="true" />
+              </button>
+            </div>
+          )}
         </div>
       )}
     </section>
