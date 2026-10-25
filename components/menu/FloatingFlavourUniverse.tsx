@@ -416,3 +416,4 @@ export function FloatingFlavourUniverse({ products }: FloatingFlavourUniversePro
     </div>
   );
 }
+

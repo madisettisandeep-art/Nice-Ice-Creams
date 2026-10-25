@@ -134,3 +134,4 @@ All 49 flavours have been verified against the official parlour menu:
 - [x] Reduced-motion preferences respected.
 - [x] Zero frameworks or build steps required to run `index.html`.
 - [x] Hero section (`CinematicHero12Shots.tsx`) remains untouched and undisturbed.
+
