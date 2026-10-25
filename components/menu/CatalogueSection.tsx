@@ -6,6 +6,7 @@ import { Category, Product } from "@/lib/db/types";
 import { ProductCard } from "./ProductCard";
 import { CatalogueSkeletonGrid } from "./ProductCardSkeleton";
 import { SignatureSlider } from "./SignatureSlider";
+import { FloatingFlavourUniverse } from "./FloatingFlavourUniverse";
 import { useCart } from "@/components/cart/CartContext";
 import { trackEvent } from "@/lib/analytics/tracker";
 import {
@@ -300,11 +301,12 @@ export function CatalogueSection({
         </motion.div>
       )}
 
-      {/* Interactive Signature Creations Slide Carousel */}
-      {showHeading && <SignatureSlider products={products} />}
+      {/* Floating Flavour Universe: Reelmark 3D Curved Cylinder Carousel containing all 49 flavours */}
+      {showHeading && <FloatingFlavourUniverse products={products} />}
 
       {/* Search, Sort & Sliding Category Pill Bar */}
       <motion.div
+        id="flavour-catalogue-grid"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
